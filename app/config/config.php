@@ -9,17 +9,16 @@
 // DB_NAME => w hna smiya d database;
 
 define('DB_HOST' ,'localhost');
-define('DB_USER','USERDB');
-define('DB_PASS','PASSDB'); //maher_db
-define('DB_NAME', 'NAMEBASEDONNES');
+define('DB_USER','root');
+define('DB_PASS','maher_db'); //maher_db
+define('DB_NAME', 'test');
 
 
 // APP ROOT 
         define('APPROOT' , dirname(dirname(__FILE__)));
 // URL ROOT 
-        define('URLROOT', '__URL 7etto hna __');
+        define('URLROOT', 'http://localhost/Fill-Rouge-Gestion-de-donnation-de-sang-');
 // SITE NAME 
-        define('SITENAME' , '__ SITE Name __');
-
+        define('SITENAME' , 'Blood Donation');
 
 

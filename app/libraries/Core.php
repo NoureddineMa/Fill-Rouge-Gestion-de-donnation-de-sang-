@@ -19,7 +19,7 @@
     
        // ki9llb ela l controller f first value 
        if(isset($url)){
-        if(file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
+        if((isset($url[1])) && file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
           // ila l9ah ki7ti f currentController :
           $this->currentController = ucwords($url[0]);
           // Unset 0 Index
