@@ -7,7 +7,7 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 ">
                     <!-- Content -->
-                    <img src="logoW.png" style="width: 80px; " alt=" ">
+                    <img src="<?php echo URLROOT; ?>/assets/img/logoW.png" style="width: 80px; " alt="logo-footer">
                     <p class="text-white ">
                         Il n'y a pas de fin aux avantages du don de sang pour ceux qui en ont besoin. Selon la Croix-Rouge américaine, un don peut sauver jusqu'à trois vies, et une personne au Maroc a besoin de sang toutes les deux secondes. </p>
                 </div>
@@ -65,3 +65,20 @@
     </div>
     <!-- Copyright -->
     </footer>
+    </body>
+<!--   Core JS Files   -->
+<script src="<?php echo URLROOT; ?>./assets/js/core/jquery.min.js " type="text/javascript "></script>
+<script src="<?php echo URLROOT; ?>./assets/js/core/popper.min.js " type="text/javascript "></script>
+<script src="<?php echo URLROOT; ?>./assets/js/core/bootstrap.min.js " type="text/javascript "></script>
+<script src="<?php echo URLROOT; ?>./assets/js/plugins/perfect-scrollbar.jquery.min.js "></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="<?php echo URLROOT; ?>./assets/js/plugins/bootstrap-switch.js "></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="<?php echo URLROOT; ?>./assets/js/plugins/nouislider.min.js " type="text/javascript "></script>
+<script src="<?php echo URLROOT; ?>./assets/js/plugins/moment.min.js "></script>
+<script src="<?php echo URLROOT; ?>./assets/js/plugins/datetimepicker.js " type="text/javascript "></script>
+<script src="<?php echo URLROOT; ?>./assets/js/plugins/bootstrap-datepicker.min.js "></script>
+<script src="<?php echo URLROOT; ?>./assets/js/main.js "></script>
+</body>
+
+</html>

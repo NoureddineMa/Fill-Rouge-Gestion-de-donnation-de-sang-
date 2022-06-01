@@ -6,23 +6,21 @@ class Pages extends Controller
 
     }
 
-    //  hna kanpassew data ela chkel array :
+    //  function rendring view for index  :
     public function index(){
         
         $this->view('pages/index');
 
     }
-    // function rend view page donnateur 
-
-    public function Admindonnateur(){
-        $this->view('pages/Admindonnateur');
-    }
-
+    //  function rendring view for Contact us   :
     public function contactus(){
         $this->view('pages/contactus');
     }
     
-
+    public function donnateur(){
+        $this->view('pages/donnateur');
+    }
+    
     
 }
 
