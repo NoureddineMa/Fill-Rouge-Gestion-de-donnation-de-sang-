@@ -1,10 +1,12 @@
+
     <!-- include head  -->
     <?php require APPROOT . '/views/inc/head.php'; ?>
     <!-- end head -->
 
+
 <body class="index-page">
     <!-- start navbar -->
-    <?php require APPROOT . '/views/inc/navbar.php'; ?> 
+    <?php require APPROOT . '/views/inc/navbar.php'; ?>
     <!-- end nav -->
 
 
@@ -24,7 +26,7 @@
                     <div class="card-body d-flex flex-column justify-content-center ">
                         </h4>
                         <p style="font-size: 75%;
-                        font-weight: 300;" class="card-text text-center   ">Bonjour Donateur ! Veuillez <span style="color: var(--Rouge);">cliquer sur cette bouton </span> pour envoyez un message a l'admin</p>
+                            font-weight: 300;" class="card-text text-center   ">Bonjour Donateur ! Veuillez <span style="color: var(--Rouge);">cliquer sur cette bouton </span> pour envoyez un message a l'admin</p>
                         <a href="#" class="btn button-d-card  ">CONTACT US </a>
                     </div>
                 </div>
@@ -129,6 +131,6 @@
     </section>
 
 
-    <!-- --------------------------footer---------------------------- -->
-    <?php  require APPROOT . '/views/inc/footer.php';  ?>
+   <!-- --------------------------footer---------------------------- -->
+   <?php  require APPROOT . '/views/inc/footer.php';  ?>
     <!-- Footer -->
