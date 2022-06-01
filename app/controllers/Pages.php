@@ -20,7 +20,10 @@ class Pages extends Controller
     public function donnateur(){
         $this->view('pages/donnateur');
     }
-    
+    public function donnateurcontactus(){
+        $this->view('pages/donnateurcontactus');
+    }
+    public function 
     
 }
 
