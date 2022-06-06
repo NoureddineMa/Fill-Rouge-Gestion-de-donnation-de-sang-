@@ -7,11 +7,8 @@
   ; z-index:2;">
 
                 <div class=" d-flex flex-column justify-content-around align-items-center px-3 pt-2 text-white ps-5 ">
-                    <a href="Dashboard.php " class="pb-sm-3 mb-md-1 me-md-auto text-black text-decoration-none ">
-                        <span class=" fs-6 py-0 me-2 "></span>
-                        <img src="<?php echo URLROOT; ?>/assets/img/logoW.png " alt="logo-white " class="logo-navbar ">
-                    </a>
-                    <div class="d-flex flex-column align-items-center ">
+                   
+                    <div class="d-flex flex-column align-items-center mt-5">
                         <img src="<?php echo URLROOT; ?>/assets/img/img.jpg " alt="hugenerd " width="70 " height="70 " class="rounded-circle mt-1 ">
                         <h4 class="text-white mt-3 h6 " style="font-size: 14px; "> <b>MAHER</b></h4>
 
@@ -20,7 +17,7 @@
 
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start  " id="menu ">
                         <li class="nav-item mb-3 side-hover " style="font-size: 16px; ">
-                            <a href="<?php echo URLROOT;?>/pages/admindonnateurs" class="btn align-middle  ">
+                            <a href="<?php echo URLROOT;?>./pages/admindonnateurs" class="btn align-middle  ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-arrow-up-right-circle-fill text-danger " viewBox="0 0 16 16 ">
                                     <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z "/>
                                   </svg>
@@ -28,7 +25,7 @@
                             </a>
                         </li>
                         <li class="mb-3 side-hover ">
-                            <a href="AdminMessages.html" data-bs-toggle="collapse " class="btn align-middle text-dark ">
+                            <a href="<?php echo URLROOT;?>./pages/adminmsg" data-bs-toggle="collapse " class="btn align-middle text-dark ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-chat-left-dots-fill text-danger " viewBox="0 0 16 16 ">
                                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z "/>
                                   </svg>
@@ -37,7 +34,7 @@
 
                         </li>
                         <li class="mb-3 side-hover">
-                            <a href="AdminPublication.html" data-bs-toggle="collapse " class="btn align-middle text-dark ">
+                            <a href="<?php echo URLROOT;?>./pages/adminpublications" data-bs-toggle="collapse " class="btn align-middle text-dark ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-pen text-danger " viewBox="0 0 16 16 ">
                                     <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5
                 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z "/>
@@ -48,7 +45,7 @@
                         </li>
 
                         <li class="mb-5 side-hover ">
-                            <a href="AdminPatient.html" data-bs-toggle="collapse " class="btn align-middle text-dark ">
+                            <a href="<?php echo URLROOT;?>./pages/adminpatients" data-bs-toggle="collapse " class="btn align-middle text-dark ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-hourglass-bottom text-danger " viewBox="0 0 16 16 ">
                                     <path d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5
                 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702s.18.149.5.149.5-.15.5-.15v-.7c0-.701.478-1.236 1.011-1.492A3.5 3.5 0 0 0 11.5 3V2h-7z "/>

@@ -17,7 +17,7 @@
                 <div class="card-body d-flex flex-column justify-content-center">
                     <p style="font-size: 75%; font-weight: 300;" class="card-text text-center  ">Bonjour Donateur ! Vous venez de Sauvez la vie de <span style="color: var(--Rouge);"> 3 personnes</span> en une seule fois
                     </p>
-                    <a href="#" class="btn button-d-card   ">PRENDRE UN RENDEZ VOUS POUR DONNER DU SANG</a>
+                    <a href="<?php echo URLROOT; ?>/pages/donnateurrdv" class="btn button-d-card   ">PRENDRE UN RENDEZ VOUS POUR DONNER DU SANG</a>
                 </div>
             </div>
             <div class="card container shadow mb-5 bg-body rounded mb-2 d-flex flex-column align-items-center ">
@@ -27,7 +27,7 @@
                         </h4>
                         <p style="font-size: 75%;
                             font-weight: 300;" class="card-text text-center   ">Bonjour Donateur ! Veuillez <span style="color: var(--Rouge);">cliquer sur cette bouton </span> pour envoyez un message a l'admin</p>
-                        <a href="#" class="btn button-d-card  ">CONTACT US </a>
+                        <a href="<?php echo URLROOT; ?>/pages/contactus" class="btn button-d-card  ">CONTACT US </a>
                     </div>
                 </div>
             </div>
@@ -41,63 +41,80 @@
         </h3>
 
         <div class="container table-responsive py-5 ">
-            <table class="table table-borderless shadow p-3 mb--3 bg-body rounded ">
-                <thead style=" color:white ; background-color:var(--Rouge); ">
-                    <tr>
+                                <table class="table table-borderless table-striped  shadow p-3 mb--3 bg-body rounded ">
+                                    <thead style=" color:white ; background-color:var(--Rouge); ">
+                                        <tr>
 
-                        <th scope="col " class=" ">First</th>
-                        <th scope="col ">Last</th>
-                        <th scope="col ">Handle</th>
-                        <th scope="col ">First</th>
-                        <th scope="col ">Last</th>
-                        <th scope="col ">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
+                                            <th class="font-weight-light" scope="col " class=" ">NOM</th>
+                                            <th class="font-weight-light" scope="col ">PRENOM</th>
+                                            <th class="font-weight-light" scope="col ">ADRESSE</th>
+                                            <th class="font-weight-light" scope="col ">VILLE</th>
+                                            <th class="font-weight-light" scope="col ">EMAIL</th>
+                                            <th class="font-weight-light" scope="col-2 ">PHONE</th>
+                                            <th class="font-weight-light" scope="col ">SANG</th>
+                                            <th class="font-weight-light" scope="col ">DATE DE NAISSANCE</th>
 
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+
+                                            <td class="font-weight-light"> <small>NOUREDDINE</small></td>
+                                            <td><small>MAHER</small></td>
+                                            <td ><small>HAY ABI REGREG RUE 20</small></td>
+                                            <td><small>RABAT</small></td>
+                                            <td ><small>Noureddinemaher13@gmail.com</small></td>
+                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
+                                            <td class="text-danger"><small>A+</small></td>
+                                            <td><small>23-05-2000</small></td>
+                                            </tr>
+                                            <tr>
+
+                                            <td > <small>NOUREDDINE</small></td>
+                                            <td ><small>MAHER</small></td>
+                                            <td ><small>HAY ABI REGREG RUE 20</small></td>
+                                            <td ><small>RABAT</small></td>
+                                            <td ><small>Noureddinemaher13@gmail.com</small></td>
+                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
+                                            <td class="text-danger"><small>A+</small></td>
+                                            <td ><small>23-05-2000</small></td>
+                                            </tr>
+                                            <tr>
+
+                                            <td> <small>NOUREDDINE</small></td>
+                                            <td><small>MAHER</small></td>
+                                            <td><small>HAY ABI REGREG RUE 20</small></td>
+                                            <td><small>RABAT</small></td>
+                                            <td><small>Noureddinemaher13@gmail.com</small></td>
+                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
+                                            <td class="text-danger"><small>A+</small></td>
+                                            <td><small>23-05-2000</small></td>
+                                            </tr>
+                                            <tr>
+
+                                            <td> <small>NOUREDDINE</small></td>
+                                            <td><small>MAHER</small></td>
+                                            <td><small>HAY ABI REGREG RUE 20</small></td>
+                                            <td><small>RABAT</small></td>
+                                            <td><small>Noureddinemaher13@gmail.com</small></td>
+                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
+                                            <td class="text-danger"><small>A+</small></td>
+                                            <td><small>23-05-2000</small></td>
+                                            </tr>
+                                            <tr>
+
+                                            <td> <small>NOUREDDINE</small></td>
+                                            <td><small>MAHER</small></td>
+                                            <td><small>HAY ABI REGREG RUE 20</small></td>
+                                            <td><small>RABAT</small></td>
+                                            <td><small>Noureddinemaher13@gmail.com</small></td>
+                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
+                                            <td class="text-danger"><small>A+</small></td>
+                                            <td><small>23-05-2000</small></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
     </section>
 
 
@@ -120,12 +137,12 @@
                     <h4 class="card-title ">VOIR LES DONNEURS DISPONIBLE !
                     </h4>
                     <p class="card-text ">Un don de sang est un processus par lequel un donneur de sang est volontaire pour se voir prélever du sang sera gardé dans une banque du sang avant de transfuser une personne malade lors d'une transfusion sanguine</p>
-                    <a href="# " class="btn button-d-card ">Voir plus</a>
+                    <a href="#" class="btn button-d-card ">Voir plus</a>
                 </div>
             </div>
         </div>
         <div class="text-center">
-            <a href="# " class="btn px-5 " style="color: white; background-color:black; margin:  0 auto;">VOIR PLUS D'ARTICLES</a>
+            <a href="<?php echo URLROOT; ?>/pages/donnateurpublication" class="btn px-5 " style="color: white; background-color:black; margin:  0 auto;">VOIR PLUS D'ARTICLES</a>
         </div>
 
     </section>

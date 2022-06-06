@@ -1,28 +1,26 @@
-<?php 
-
-// base controller 
-// loads the models and views 
-
-class Controller {
-    // --------------hadi l model-------------------
+<?php
+  /*
+   * Base Controller
+   * Loads the models and views
+   */
+  class Controller {
+    // Load model
     public function model($model){
-        // hna ghadi ndiro require file 
-        require_once '../app/models/' . $model . '.php';
+      // Require model file
+      require_once '../app/models/' . $model . '.php';
 
-        // hna andiru instance l model 
-        return new $model();
+      // Instatiate model
+      return new $model();
     }
 
-    // ---------------w hadi l view---------------- :
-
-   public function view($view, $data =[])
-   {
-    // anchekew dek file d view wach kayen
-    if(file_exists('../app/views/' . $view . '.php')){
+    // Load view
+    public function view($view, $data = []){
+      // Check for view file
+      if(file_exists('../app/views/' . $view . '.php')){
         require_once '../app/views/' . $view . '.php';
-    }else {
-        // dek file d view makaynch 
+      } else {
+        // View does not exist
         die('View does not exist');
+      }
     }
-   }
-}
+  }

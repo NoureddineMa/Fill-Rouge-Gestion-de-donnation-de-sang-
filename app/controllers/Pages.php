@@ -19,9 +19,6 @@ class Pages extends Controller
     public function donnateur(){
         $this->view('pages/donnateur');
     }
-    public function donnateurcontactus(){
-        $this->view('pages/donnateurcontactus');
-    }
     public function donnateurrdv(){
         $this->view('pages/donnateurrdv');
     }
@@ -34,10 +31,7 @@ class Pages extends Controller
     public function patientrdv(){
         $this->view('pages/patientrdv');
     }
-    public function patientcontactus(){
-    $this->view('pages/patientcontactus');
-    }
-
+   
     public function login(){
         $this->view('pages/login');
     }

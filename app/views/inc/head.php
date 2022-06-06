@@ -4,8 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
 
     <title>
         BLOOD DONATION
@@ -13,11 +11,11 @@
 
     <!--     Fonts and icons     -->
     <!-- Nucleo Icons -->
-    <link href="<?php echo URLROOT; ?>./assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="<?php echo URLROOT; ?>./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="<?php echo URLROOT; ?>/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="<?php echo URLROOT; ?>/assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
-    <link href="<?php echo URLROOT; ?>./assets/css/font-awesome.css" rel="stylesheet" /> 
-    <link href="<?php echo URLROOT; ?>./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="<?php echo URLROOT; ?>/assets/css/font-awesome.css" rel="stylesheet" /> 
+    <link href="<?php echo URLROOT; ?>/assets/css/nucleo-svg.css" rel="stylesheet" />
     
      <!-- CSS Files -->
     <link href="<?php echo URLROOT; ?>/assets/css/argon-design-system.css?v=1.2.2" rel="stylesheet" />

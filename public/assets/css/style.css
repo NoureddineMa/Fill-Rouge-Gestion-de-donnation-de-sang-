@@ -122,3 +122,11 @@ border-radius: 5px;
 .side-hover:hover {
     background-color: red;
 }
+
+.inputfield {
+    height: 50px;
+}
+
+.text-chihaja {
+    color: red;
+}

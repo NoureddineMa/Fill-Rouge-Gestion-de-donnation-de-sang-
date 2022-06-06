@@ -12,77 +12,38 @@
 
 
     <!-- form contact us  -->
-    <section class="container mt-5 mb-5">
-        <h1 class="font-weight-bold d-flex justify-content-center mb-5 mt-5">Contact Us</h1>
-        <form>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <div class="input-group input-group-alternative mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
-                            </div>
-                            <input class="form-control form-control-alternative" placeholder="Search" type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <div class="input-group input-group-alternative mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
-                            </div>
-                            <input class="form-control form-control-alternative" placeholder="Search" type="text">
-                        </div>
-                    </div>
-                </div>
+        
+    <form class="container shadow p-3 mb-5 bg-body rounded mt-5 " action="<?php echo URLROOT; ?>/Messages/Addmsg" method="POST">
+        <h3 class=" text-center font-weight-bold mb-5 mt-3">CONTACTEZ NOUS
+        </h3>
+        <div class="form-row ">
+            <div class="form-group col-md-6 ">
+                <label for="nom ">NOM <span class="text-danger"> *</span> :</label>
+                <input type="text " name="Nom"  class="form-control">
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <div class="input-group input-group-alternative mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
-                            </div>
-                            <input class="form-control form-control-alternative" placeholder="Search" type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <div class="input-group input-group-alternative mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
-                            </div>
-                            <input class="form-control form-control-alternative" placeholder="Search" type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <div class="input-group input-group-alternative mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
-                            </div>
-                            <input class="form-control form-control-alternative" placeholder="Search" type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <div class="input-group input-group-alternative mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"></span>
-                            </div>
-                            <input class="form-control form-control-alternative" placeholder="Search" type="text">
-                        </div>
-                    </div>
-                </div>
+            <div class="form-group col-md-6 ">
+                <label for="prenom ">PRENOM <span class="text-danger"> *</span> :</label>
+                <input type="text "  name="Prenom" id="inputPassword4 " class="form-control" >
             </div>
-            <div class="d-flex justify-content-center mt-2 mb-3">
-                <button class="btn btn-danger px-5" type="button">Envoyez</button>
-            </div>
-        </form>
+        </div>
+        <div class="form-group ">
+            <label for="email ">EMAIL <span class="text-danger"> *</span> :</label>
+            <input type="email "  name="Email"  id="inputAddress "class="form-control" >
+        </div>
+        <div class="form-group ">
+            <label for="contexte ">CONTEXTE <span class="text-danger"> *</span> :</label>
+            <input type="text "  name="Contexte" class="form-control " id="inputAddress "class="form-control">
+        </div>
+        <div class="form-group ">
+            <label for="message ">MESSAGE <span class="text-danger"> *</span> :</label>
+            <textarea type="text "  name="Msg"  style="height:140px;" id="inputAddress "  class="form-control">
+        </textarea>
+        </div>
+       
+        <button type="submit " name="submit"  class="btn btn-danger ">ENVOYEZ</button>
+    </form>
+
+
     </section>
     <!-- end form contact us  -->
 

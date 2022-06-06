@@ -10,43 +10,56 @@
 
 
     <form class="container shadow p-3 mb-5 bg-body rounded mt-5 ">
-        <h3 class=" text-center font-weight-bold mb-5 mt-3">RENDEZ VOUS
+        <h3 class=" text-center font-weight-bold mb-5 mt-3">RENDEZ VOUS (PATIENT)
         </h3>
         <div class="form-row ">
             <div class="form-group col-md-6 ">
-                <label for="inputEmail4 ">Email</label>
-                <input type="email " class="form-control " id="inputEmail4 " placeholder="Email ">
+                <label for="inputEmail4 ">NOM <span class="text-danger"> *</span> :</label>
+                <input type="email " class="form-control " id="inputEmail4 " placeholder="Veuillez Entrer Votre Nom  ">
             </div>
             <div class="form-group col-md-6 ">
-                <label for="inputPassword4 ">Password</label>
-                <input type="password " class="form-control " id="inputPassword4 " placeholder="Password ">
+                <label for="inputPassword4 ">PRENOM <span class="text-danger"> *</span> :</label>
+                <input type="password " class="form-control " id="inputPassword4 " placeholder="Veuillez Entrer Votre Prenom  ">
             </div>
-        </div>
-        <div class="form-group ">
-            <label for="inputAddress ">Address</label>
-            <input type="text " class="form-control " id="inputAddress " placeholder="1234 Main St ">
-        </div>
-        <div class="form-group ">
-            <label for="inputAddress2 ">Address 2</label>
-            <input type="text " class="form-control " id="inputAddress2 " placeholder="Apartment, studio, or floor ">
         </div>
         <div class="form-row ">
             <div class="form-group col-md-6 ">
-                <label for="inputCity ">City</label>
-                <input type="text " class="form-control " id="inputCity ">
+                <label for="inputEmail4 ">ADRESSE <span class="text-danger"> *</span> :</label>
+                <input type="email " class="form-control " id="inputEmail4 " placeholder="Veuillez Entrer Votre Nom  ">
             </div>
-            <div class="form-group col-md-4 ">
-                <label for="inputState ">State</label>
-                <select id="inputState " class="form-control ">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-            </div>
-            <div class="form-group col-md-2 ">
-                <label for="inputZip ">Zip</label>
-                <input type="text " class="form-control " id="inputZip ">
+            <div class="form-group col-md-6 ">
+                <label for="inputPassword4 ">VILLE <span class="text-danger"> *</span> :</label>
+                <input type="password " class="form-control " id="inputPassword4 " placeholder="Veuillez Entrer Votre Prenom  ">
             </div>
         </div>
+        <div class="form-group ">
+            <label for="inputAddress2 ">EMAIL <span class="text-danger"> *</span> :</label>
+            <input type="text " class="form-control " id="inputAddress2 " placeholder="Veuillez Entrer Votre Mail ">
+        </div>
+        <div class="form-group ">
+            <label for="inputAddress2 ">NUMERO DE TELEPHONE <span class="text-danger"> *</span> :</label>
+            <input type="text " class="form-control " id="inputAddress2 " placeholder="Veuillez Entrer Votre Numero de telephone ">
+        </div>
+            <div class="form-group">
+            <label for="inputAddress2 ">NATURE DE SANG <span class="text-danger"> *</span> :</label>
+            <select class="form-control ">
+              <option selected>--Groupe Sanguin--</option>
+              <option value="dog">O-</option>
+            <option value="cat">O+</option>
+            <option value="hamster">B-</option>
+            <option value="parrot">B+</option>
+            <option value="spider">A-</option>
+            <option value="goldfish">A+</option>
+            <option value="goldfish">AB-</option>
+            <option value="goldfish">AB+</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-group ">
+            <label for="inputAddress2 ">DATE DE NAISSANCE <span class="text-danger"> *</span> :</label>
+            <input type="date" class="form-control">
+        </div>
+        
 
         <button type="submit " class="btn btn-danger ">Envoyez</button>
     </form>

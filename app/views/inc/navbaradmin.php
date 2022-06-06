@@ -10,7 +10,6 @@
                                     <i class="fa-solid fa-magnifying-glass position-a "></i>
                             </div>
                             </a>
-                            <i class="fal fa-bell ms-2 text-muted "></i>
                         </form>
                     </div>
                 </nav>

@@ -9,50 +9,44 @@
     protected $currentMethod = 'index';
     protected $params = [];
 
-
-//---------------  ki9leb ela lclass f indice lewla f url ---------------
-
     public function __construct(){
-      //  print_r($this->getUrl());
+      //print_r($this->getUrl());
+
       $url = $this->getUrl();
 
-    
-       // ki9llb ela l controller f first value 
-       if(isset($url)){
-        if((isset($url[1])) && file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
-          // ila l9ah ki7ti f currentController :
+      // Look in controllers for first value
+      if(isset($url)){
+        if(file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
+          // If exists, set as controller
           $this->currentController = ucwords($url[0]);
           // Unset 0 Index
           unset($url[0]);
         }
       }
+    
 
-      // require the controller 
-      require_once '../app/controllers/' . $this->currentController .'.php';
+      // Require the controller
+      require_once '../app/controllers/'. $this->currentController . '.php';
 
-
-      // instantiate controller class 
+      // Instantiate controller class
       $this->currentController = new $this->currentController;
 
+      // Check for second part of url
+      if(isset($url[1])){
+        // Check to see if method exists in controller
+        if(method_exists($this->currentController, $url[1])){
+          $this->currentMethod = $url[1];
+          // Unset 1 index
+          unset($url[1]);
+        }
+      }
 
-      // daba ki9leb ela tani indice f l'url li huwa lméthode : 
+      // Get params
+      $this->params = $url ? array_values($url) : [];
 
-    if(isset($url[1])){
-      // daba an9lbo ela lmethode wach existe déja f lcontroller :
-    if(method_exists($this->currentController, $url[1])){
-       $this->currentMethod = $url[1];
-       // hna ghadin khwiw dek array mn indice d méthode[1]: 
-         unset($url[1]);
-   }
-  }
-  // hadi bach kanjibu parametres : 
-  $this -> params = $url  ? array_values($url) : [];
-
-  // an3ytu 3la array diyal paramétres : 
-  call_user_func_array([$this->currentController , $this->currentMethod], $this->params);
- }
-
- // hadi bach kanjibu l URL : 
+      // Call a callback with array of params
+      call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
+    }
 
     public function getUrl(){
       if(isset($_GET['url'])){
@@ -62,12 +56,6 @@
         return $url;
       }
     }
-  }
-  //---------------  end code searching name class ---------------
-
-
-
-
-
+  } 
   
   

@@ -16,8 +16,12 @@
                 font-weight: 300;">Découvrez la nouvelle campagne de sensibilisation au don de sang <br> la mobilisation faiblit et pourtant elle reste essentielle. <br> Moins d'1 personne sur 10 donne du sang alors<br> qu'1 personne sur 7 en aura un jour besoin <br> pour
                     continuer à vivre.</p>
                 <div class="buttons">
+                  <a href="<?php echo URLROOT; ?>/pages/donnateurrdv">
                     <button type="button " class="btn button-index-r btn-round ">Donner du Sang</button>
+                  </a>
+                  <a href="<?php echo URLROOT; ?>/pages/patient">
                     <button type="button" class="btn button-index-b btn-round">Besoin de Sang</button>
+                  </a>
                 </div>
             </div>
 
@@ -287,7 +291,7 @@
                     <p class="card-text ">Le don du sang est gratuit et ne peut donner lieu au profit du donneur à aucune rémunération de quelque nature que ce soit. Le prélèvement du sang peut être effectué sur des malades en vue d'une transfusion autologue dans un but d'économie
                         du sang et de sécurité transfusionnelle.
                     </p>
-                    <a href="javascript:; " class="btn button-d-card ">PRENDRE UN RENDEZ VOUS</a>
+                    <a href="<?php echo URLROOT; ?>/pages/donnateurrdv" class="btn button-d-card ">PRENDRE UN RENDEZ VOUS</a>
                 </div>
             </div>
             <div class="card container shadow mb-5 bg-body rounded mb-5 ">
@@ -296,7 +300,7 @@
                     <h4 class="card-title ">VOIR LES DONNEURS DISPONIBLE !
                     </h4>
                     <p class="card-text ">Un don de sang est un processus par lequel un donneur de sang est volontaire pour se voir prélever du sang sera gardé dans une banque du sang avant de transfuser une personne malade lors d'une transfusion sanguine</p>
-                    <a href="# " class="btn button-d-card ">Voir les Donneurs disponible</a>
+                    <a href="<?php echo URLROOT; ?>/pages/patient" class="btn button-d-card ">Voir les Donneurs disponible</a>
                 </div>
             </div>
         </div>
