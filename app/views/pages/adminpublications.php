@@ -112,7 +112,7 @@
                             </div>
                         </div>
                       <?php endforeach; ?>
-                      <!-- end foreach            -->
+                      <!-- end foreach  -->
 
                     </div>
                 </main>

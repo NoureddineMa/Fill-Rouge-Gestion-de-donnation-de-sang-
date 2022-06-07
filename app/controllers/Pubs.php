@@ -7,11 +7,21 @@
             $this->pubmodel = $this->model('Pub');
         }
 
-        // function affichage patients
+        // function affichage patients for admin
 
         public function showpubs(){
             $data = $this->pubmodel->getpubs();
             $this->view('pages/adminpublications',$data);
+          }
+
+         // end function affichage  
+
+
+          // function affichage patients for admin
+
+        public function showpubsUser(){
+            $data = $this->pubmodel->getpubs();
+            $this->view('pages/donnateurpublication',$data);
           }
 
          // end function affichage  

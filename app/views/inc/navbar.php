@@ -34,7 +34,7 @@
                         <a href="<?php echo URLROOT; ?>/pages/patient" class="nav-link nav-link-icon  ml-3 mr-3 nav-link-hover">Besoin de sang</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo URLROOT; ?>/pages/donnateurpublication" class="nav-link nav-link-icon  ml-3 nav-link-hover">Publications</a>
+                        <a href="<?php echo URLROOT; ?>/pubs/showpubsUser" class="nav-link nav-link-icon  ml-3 nav-link-hover">Publications</a>
                     </li>
                     <li class="nav-item">
                         <a href="<?php echo URLROOT; ?>/pages/contactus" class="nav-link nav-link-icon  ml-2 mr-5 nav-link-hover">Contactez Nous</a>
