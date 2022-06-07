@@ -26,7 +26,7 @@
                     </h3>
 
                     <div class="container table-responsive py-5 ">
-                                <table class="table table-borderless table-striped  shadow p-3 mb--3 bg-body rounded ">
+                                <table class="table table-borderless  table-striped  shadow p-3 mb--3 bg-body rounded ">
                                     <thead style=" color:white ; background-color:var(--Rouge); ">
                                         <tr>
 

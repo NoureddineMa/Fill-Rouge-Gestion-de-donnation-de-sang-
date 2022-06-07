@@ -5,7 +5,14 @@
             public function __construct(){
 
                 $this->messagesmodel = $this->model('Message');
+
             }
+
+          public function adminmsg(){
+            $data = $this->messagesmodel->getmessages();
+
+          $this->view('pages/adminmsg',$data);
+          }
 
 
                 public function Addmsg() {
@@ -17,11 +24,10 @@
                         'Email' => trim($_POST['Email']),
                         'Contexte' => trim($_POST['Contexte']),
                         'Msg' => trim($_POST['Msg']),
-
                       ];
                       
                       $data = $this->messagesmodel->addmessages($data);
                       redirect('pages/contactus');
-                  }
+                }
               }
-        }
+            }

@@ -9,16 +9,19 @@ class Message {
         $this->db = new Database;
       }
 
-    // public function getmessages(){
+      public function getmessages(){
+        $this->db->query("SELECT * FROM `messages`");
 
-    //    $this->db->query('SELECT * FROM `messages`');
+        // excute query 
+
+       if($this->db->resultSet()){
+         return $this->db->resultSet();
+       } else {
+         return false;
+       }
+
        
-    //      // execution de la query / fetch all
-    //    $results = $this->db->resultSet(); 
-
-    //    return $results;
-
-    //   }
+    }
 
       public function addmessages($data) {
 

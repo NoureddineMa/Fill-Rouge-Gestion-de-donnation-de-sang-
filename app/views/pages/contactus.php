@@ -42,8 +42,6 @@
        
         <button type="submit " name="submit"  class="btn btn-danger ">ENVOYEZ</button>
     </form>
-
-
     </section>
     <!-- end form contact us  -->
 

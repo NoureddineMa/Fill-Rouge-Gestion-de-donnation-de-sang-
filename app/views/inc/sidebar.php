@@ -25,7 +25,7 @@
                             </a>
                         </li>
                         <li class="mb-3 side-hover ">
-                            <a href="<?php echo URLROOT;?>./pages/adminmsg" data-bs-toggle="collapse " class="btn align-middle text-dark ">
+                            <a href="<?php echo URLROOT;?>./messages/adminmsg" data-bs-toggle="collapse " class="btn align-middle text-dark ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-chat-left-dots-fill text-danger " viewBox="0 0 16 16 ">
                                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z "/>
                                   </svg>
@@ -55,7 +55,7 @@
 
                         </li>
                         <li class="mt-5 side-hover">
-                            <a href="logout.html" data-bs-toggle="collapse " class="btn text-dark ">
+                            <a href="<?php echo URLROOT;?>./pages/index" data-bs-toggle="collapse " class="btn text-dark ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-box-arrow-right text-danger " viewBox="0 0 16 16 ">
                                     <path fill-rule="evenodd " d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5
                 0 0 0-1 0v2z "/>

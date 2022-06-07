@@ -3,7 +3,7 @@
 class Pages extends Controller
 {
     public function __construct(){
-
+        $this->messagesmodel = $this->model('Message');
     }
     //  function rendring view for index  :
     public function index(){
@@ -38,9 +38,7 @@ class Pages extends Controller
     public function admindonnateurs(){
         $this->view('pages/admindonnateurs');
     }
-    public function adminmsg(){
-        $this->view('pages/adminmsg');
-    }
+   
     public function adminpatients(){
         $this->view('pages/adminpatients');
     }
