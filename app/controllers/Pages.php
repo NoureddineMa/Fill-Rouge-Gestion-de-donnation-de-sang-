@@ -49,9 +49,7 @@ class Pages extends Controller
     // public function adminpatients(){
     //     $this->view('pages/adminpatients');
     // }
-    public function adminpublications(){
-        $this->view('pages/adminpublications');
-    }
+  
 }
 ?>
 

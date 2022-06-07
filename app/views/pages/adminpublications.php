@@ -62,7 +62,7 @@
                                                             <div class="input-group input-group-alternative">
                                                                 <div class="input-group-prepend">
                                                                 </div>
-                                                                <input class="form-control" name="Image"  placeholder="title" type="text">
+                                                                <input class="form-control" name="Title"  placeholder="title" type="text">
                                                             </div>
                                                         </div>
 
@@ -91,109 +91,28 @@
                         </div>
                     </div>
                     <div class="mb-4 d-flex flex-row justify-content-around  flex-wrap ">
+                        
+                        
+                       <!-- // foreach  -->
+                        <?php foreach ($data as $value) : ?>
                         <div class="col-lg-3 col-sm-6  col-12 pt-4 ">
                             <div class="card" style="width: 18rem;">
                                 <div class="w-100 d-flex flex-row justify-content-center py-2 justify-content-around bg-dark">
                                     <a href="">
                                         <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
                                     </a>
-                                    <a href=""> <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
+                                    <a href="<?php echo URLROOT; ?>/pubs/supprimerpost/<?php echo $value->id ?>" <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
                                     </a>
                                 </div>
                                 <img class="card-img-top" src="<?php echo URLROOT; ?>/assets/img/img.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-                                        assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte..</p>
+                                    <h3 class="card-text"><?php echo $value->Title ?></h3>
+                                    <p class="card-text"><?php echo $value->Description ?></p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-3 col-sm-6  col-12 pt-4 ">
-                            <div class="card" style="width: 18rem;">
-                                <div class="w-100 d-flex flex-row justify-content-center py-2 justify-content-around bg-dark">
-                                    <a href="">
-                                        <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
-                                    </a>
-                                    <a href=""> <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
-                                    </a>
-                                </div>
-                                <img class="card-img-top" src="<?php echo URLROOT; ?>/assets/img/img.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-                                        assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte..</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6  col-12 pt-4 ">
-                            <div class="card" style="width: 18rem;">
-                                <div class="w-100 d-flex flex-row justify-content-center py-2 justify-content-around bg-dark">
-                                    <a href="">
-                                        <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
-                                    </a>
-                                    <a href=""> <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
-                                    </a>
-                                </div>
-                                <img class="card-img-top" src="<?php echo URLROOT; ?>/assets/img/img.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-                                        assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte..</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6  col-12 pt-4 ">
-                            <div class="card" style="width: 18rem;">
-                                <div class="w-100 d-flex flex-row justify-content-center py-2 justify-content-around bg-dark">
-                                    <a href="">
-                                        <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
-                                    </a>
-                                    <a href=""> <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
-                                    </a>
-                                </div>
-                                <img class="card-img-top" src="<?php echo URLROOT; ?>/assets/img/img.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-                                        assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte..</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6  col-12 pt-4 ">
-                            <div class="card" style="width: 18rem;">
-                                <div class="w-100 d-flex flex-row justify-content-center py-2 justify-content-around bg-dark">
-                                    <a href="">
-                                        <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
-                                    </a>
-                                    <a href=""> <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
-                                    </a>
-                                </div>
-                                <img class="card-img-top" src="<?php echo URLROOT; ?>/assets/img/img.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-                                        assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte..</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6  col-12 pt-4 ">
-                            <div class="card" style="width: 18rem;">
-                                <div class="w-100 d-flex flex-row justify-content-center py-2 justify-content-around bg-dark">
-                                    <a href="">
-                                        <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
-                                    </a>
-                                    <a href=""> <i class="ni ni-zoom-split-in " aria-hidden="true "></i>
-                                    </a>
-                                </div>
-                                <img class="card-img-top" src="<?php echo URLROOT; ?>/assets/img/img.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-                                        assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte..</p>
-                                </div>
-                            </div>
-                        </div>
-
-
+                      <?php endforeach; ?>
+                      <!-- end foreach            -->
 
                     </div>
                 </main>

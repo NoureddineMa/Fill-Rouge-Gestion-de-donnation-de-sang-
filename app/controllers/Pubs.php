@@ -7,18 +7,43 @@
             $this->pubmodel = $this->model('Pub');
         }
 
+        // function affichage patients
+
+        public function showpubs(){
+            $data = $this->pubmodel->getpubs();
+            $this->view('pages/adminpublications',$data);
+          }
+
+         // end function affichage  
+
+        // function add Posts : 
+
         public function ajouterpub(){
             if(isset($_POST['submit'])){
 
                
                 $data = [
                     'Image' => $_POST['Image'],
-                    'Title' => trim($_POST['Tilte']),
+                    'Title' => trim($_POST['Title']),
                     'Description' => trim($_POST['Description']),
                 ];
 
                 $data = $this->pubmodel->Addpub($data);
-                redirect('pages/adminpublications');
+                redirect('pubs/showpubs',$data);
             }
         }
+
+        // end function add posts
+
+
+        //  function delete 
+        public function supprimerpost($id){
+
+            $this->pubmodel->deletepub($id);
+            redirect('pubs/showpubs'); 
+            }
+        // end function delete 
+
+
+
     }
