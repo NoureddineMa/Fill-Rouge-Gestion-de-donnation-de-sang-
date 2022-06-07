@@ -46,7 +46,7 @@
 
                                                     <!-- form -->
 
-                                                    <form role="form">
+                                                    <form role="form" action="<?php echo URLROOT; ?>/Pubs/ajouterpub"" method="POST">
 
 
                                                         <div class="form-group mb-3">
@@ -54,7 +54,7 @@
                                                                 <div class="input-group-prepend">
 
                                                                 </div>
-                                                                <input class="form-control" type="file">
+                                                                <input class="form-control" name="Image" type="file">
                                                             </div>
                                                         </div>
 
@@ -62,14 +62,22 @@
                                                             <div class="input-group input-group-alternative">
                                                                 <div class="input-group-prepend">
                                                                 </div>
-                                                                <input class="form-control" style="padding:40px 0;" placeholder="Contenu" type="text">
+                                                                <input class="form-control" name="Image"  placeholder="title" type="text">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="input-group input-group-alternative">
+                                                                <div class="input-group-prepend">
+                                                                </div>
+                                                                <input class="form-control" name="Description" style="padding:40px 0;" placeholder="Contenu" type="text">
                                                             </div>
                                                         </div>
 
 
 
                                                         <div class="text-center">
-                                                            <button type="button" class="btn btn-primary my-4">Ajouter</button>
+                                                            <button type="submit" name="submit" class="btn btn-primary my-4">Ajouter</button>
                                                         </div>
                                                     </form>
 
@@ -192,17 +200,17 @@
 
                 <!-- end section Publications -->
                 <!--   Core JS Files   -->
-                <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
-                <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-                <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-                <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+                <script src="<?php echo URLROOT; ?>./assets/js/core/jquery.min.js" type="text/javascript"></script>
+                <script src="<?php echo URLROOT; ?>./assets/js/core/popper.min.js" type="text/javascript"></script>
+                <script src="<?php echo URLROOT; ?>./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+                <script src="<?php echo URLROOT; ?>./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
                 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
                 <script src="./assets/js/plugins/bootstrap-switch.js"></script>
                 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-                <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-                <script src="./assets/js/plugins/moment.min.js"></script>
-                <script src="./assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
-                <script src="./assets/js/plugins/bootstrap-datepicker.min.js"></script>
+                <script src="<?php echo URLROOT; ?>./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+                <script src="<?php echo URLROOT; ?>./assets/js/plugins/moment.min.js"></script>
+                <script src="<?php echo URLROOT; ?>./assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+                <script src="<?php echo URLROOT; ?>./assets/js/plugins/bootstrap-datepicker.min.js"></script>
 
 </body>
 
