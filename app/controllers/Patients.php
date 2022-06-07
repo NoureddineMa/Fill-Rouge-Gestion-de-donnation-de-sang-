@@ -8,11 +8,10 @@
 
             }
 
-        //   public function showpatients(){
-        //     $data = $this->patientmodel->getpatients();
-
-        //   $this->view('pages/adminpatients',$data);
-        //   }
+          public function showpatients(){
+            $data = $this->patientmodel->getpatients();
+            $this->view('pages/adminpatients',$data);
+          }
 
 
                 public function ajouterpatient() {

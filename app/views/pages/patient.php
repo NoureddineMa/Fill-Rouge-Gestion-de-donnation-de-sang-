@@ -56,7 +56,6 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-
                                             <td class="font-weight-light"> <small>NOUREDDINE</small></td>
                                             <td><small>MAHER</small></td>
                                             <td ><small>HAY ABI REGREG RUE 20</small></td>
@@ -66,50 +65,6 @@
                                             <td class="text-danger"><small>A+</small></td>
                                             <td><small>23-05-2000</small></td>
                                             </tr>
-                                            <tr>
-
-                                            <td > <small>NOUREDDINE</small></td>
-                                            <td ><small>MAHER</small></td>
-                                            <td ><small>HAY ABI REGREG RUE 20</small></td>
-                                            <td ><small>RABAT</small></td>
-                                            <td ><small>Noureddinemaher13@gmail.com</small></td>
-                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
-                                            <td class="text-danger"><small>A+</small></td>
-                                            <td ><small>23-05-2000</small></td>
-                                            </tr>
-                                            <tr>
-
-                                            <td> <small>NOUREDDINE</small></td>
-                                            <td><small>MAHER</small></td>
-                                            <td><small>HAY ABI REGREG RUE 20</small></td>
-                                            <td><small>RABAT</small></td>
-                                            <td><small>Noureddinemaher13@gmail.com</small></td>
-                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
-                                            <td class="text-danger"><small>A+</small></td>
-                                            <td><small>23-05-2000</small></td>
-                                            </tr>
-                                            <tr>
-
-                                            <td> <small>NOUREDDINE</small></td>
-                                            <td><small>MAHER</small></td>
-                                            <td><small>HAY ABI REGREG RUE 20</small></td>
-                                            <td><small>RABAT</small></td>
-                                            <td><small>Noureddinemaher13@gmail.com</small></td>
-                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
-                                            <td class="text-danger"><small>A+</small></td>
-                                            <td><small>23-05-2000</small></td>
-                                            </tr>
-                                            <tr>
-
-                                            <td> <small>NOUREDDINE</small></td>
-                                            <td><small>MAHER</small></td>
-                                            <td><small>HAY ABI REGREG RUE 20</small></td>
-                                            <td><small>RABAT</small></td>
-                                            <td><small>Noureddinemaher13@gmail.com</small></td>
-                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
-                                            <td class="text-danger"><small>A+</small></td>
-                                            <td><small>23-05-2000</small></td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>

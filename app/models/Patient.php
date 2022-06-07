@@ -9,19 +9,20 @@ class Patient {
         $this->db = new Database;
       }
 
-    //   public function getpatients(){
-    //     $this->db->query("SELECT * FROM `patient`");
+      public function getpatients(){
+        $this->db->query("SELECT * FROM `patient`");
 
-    //     // excute query 
+        // excute query 
 
-    //    if($this->db->resultSet()){
-    //      return $this->db->resultSet();
-    //    } else {
-    //      return false;
-    //    }
-
+       if($this->db->resultSet()){
+         return $this->db->resultSet();
+       } else {
+         return false;
+       }
        
-    // }
+    }
+    
+    
 
       public function Addpatient($data) {
 

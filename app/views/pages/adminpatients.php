@@ -42,61 +42,19 @@
                                             </tr>
                                             </thead>
                                             <tbody>
+                                            <?php foreach ($data as $value) : ?>
                                             <tr>
-
-                                            <td class="font-weight-light"> <small>NOUREDDINE</small></td>
-                                            <td><small>MAHER</small></td>
-                                            <td ><small>HAY ABI REGREG RUE 20</small></td>
-                                            <td><small>RABAT</small></td>
-                                            <td ><small>Noureddinemaher13@gmail.com</small></td>
-                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
-                                            <td class="text-danger"><small>A+</small></td>
-                                            <td><small>23-05-2000</small></td>
+                                            <td class="font-weight-light"> <small><?php echo $value->Nom_patient  ?></small></td>
+                                            <td><small><?php echo $value->Prenom_patient  ?></small></td>
+                                            <td ><small><?php echo $value->Adresse_patient  ?></small></td>
+                                            <td><small><?php echo $value->Ville_patient  ?></small></td>
+                                            <td ><small><?php echo $value->Email_patient  ?></small></td>
+                                            <td class="col-2"><small><?php echo $value->Phone_patient  ?></small></td>
+                                            <td class="text-danger"><small><?php echo $value->Sang_patient  ?></small></td>
+                                            <td><small><?php echo $value->date_de_naissance_p  ?></small></td>
+                                            <?php endforeach;  ?>
                                             </tr>
-                                            <tr>
-
-                                            <td > <small>NOUREDDINE</small></td>
-                                            <td ><small>MAHER</small></td>
-                                            <td ><small>HAY ABI REGREG RUE 20</small></td>
-                                            <td ><small>RABAT</small></td>
-                                            <td ><small>Noureddinemaher13@gmail.com</small></td>
-                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
-                                            <td class="text-danger"><small>A+</small></td>
-                                            <td ><small>23-05-2000</small></td>
-                                            </tr>
-                                            <tr>
-
-                                            <td> <small>NOUREDDINE</small></td>
-                                            <td><small>MAHER</small></td>
-                                            <td><small>HAY ABI REGREG RUE 20</small></td>
-                                            <td><small>RABAT</small></td>
-                                            <td><small>Noureddinemaher13@gmail.com</small></td>
-                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
-                                            <td class="text-danger"><small>A+</small></td>
-                                            <td><small>23-05-2000</small></td>
-                                            </tr>
-                                            <tr>
-
-                                            <td> <small>NOUREDDINE</small></td>
-                                            <td><small>MAHER</small></td>
-                                            <td><small>HAY ABI REGREG RUE 20</small></td>
-                                            <td><small>RABAT</small></td>
-                                            <td><small>Noureddinemaher13@gmail.com</small></td>
-                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
-                                            <td class="text-danger"><small>A+</small></td>
-                                            <td><small>23-05-2000</small></td>
-                                            </tr>
-                                            <tr>
-
-                                            <td> <small>NOUREDDINE</small></td>
-                                            <td><small>MAHER</small></td>
-                                            <td><small>HAY ABI REGREG RUE 20</small></td>
-                                            <td><small>RABAT</small></td>
-                                            <td><small>Noureddinemaher13@gmail.com</small></td>
-                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
-                                            <td class="text-danger"><small>A+</small></td>
-                                            <td><small>23-05-2000</small></td>
-                                        </tr>
+            
                                     </tbody>
                                 </table>
                             </div>

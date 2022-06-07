@@ -33,15 +33,14 @@
                      </thead>
                          <tbody>
                          <?php foreach ( $data as $value) : ?>
-
                          <tr>
-                    <td class="font-weight-light"> <small><?php echo $value->Nom ?></small></td>
-                    <td><small><?php echo $value->Prenom ?></small></td>
-                    <td ><small><?php echo $value->Email ?></small></td>
-                    <td><small><?php echo $value->Contexte ?></small></td>
-                    <td ><small><?php echo $value->Msg ?></small></td>
-                    <?php endforeach; ?>
-                    </tr>
+                        <td class="font-weight-light"> <small><?php echo $value->Nom ?></small></td>
+                        <td><small><?php echo $value->Prenom ?></small></td>
+                        <td ><small><?php echo $value->Email ?></small></td>
+                        <td><small><?php echo $value->Contexte ?></small></td>
+                        <td ><small><?php echo $value->Msg ?></small></td>
+                        <?php endforeach; ?>
+                        </tr>
                     </tbody>
                  </table>
              </div>
