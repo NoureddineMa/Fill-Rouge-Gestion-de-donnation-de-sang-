@@ -49,6 +49,9 @@ class Pages extends Controller
     //     $this->view('pages/adminpatients');
     // }
   
+    public function msgforpatient(){
+        $this->view('pages/msgforpatient');
+    }
 }
 ?>
 

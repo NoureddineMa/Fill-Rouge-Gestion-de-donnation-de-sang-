@@ -29,7 +29,7 @@
                       ];
                       
                       $data = $this->patientmodel->Addpatient($data);
-                      redirect('pages/patientrdv');
+                      redirect('pages/msgforpatient');
                 }
               }
             }
