@@ -12,7 +12,7 @@
     <div class="mb-4 d-flex flex-row justify-content-around  flex-wrap ">
                         
     <?php 
-        if(empty($user)){
+        if(!empty($user)){
         ?>
                        <!-- // foreach  -->
                         <?php foreach ($data as $value) : ?>
