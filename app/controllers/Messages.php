@@ -27,7 +27,7 @@
                       ];
                       
                       $data = $this->messagesmodel->addmessages($data);
-                      redirect('pages/contactus');
+                      redirect('pages/msgformessages');
                 }
               }
             }

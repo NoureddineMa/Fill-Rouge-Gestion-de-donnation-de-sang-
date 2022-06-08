@@ -29,7 +29,7 @@
                       ];
                       
                       $data = $this->donnateurmodel->adddonnateurs($data);
-                      redirect('pages/donnateurrdv');
+                      redirect('pages/msgfordonnateurs');
                 }
               }
             }

@@ -52,6 +52,13 @@ class Pages extends Controller
     public function msgforpatient(){
         $this->view('pages/msgforpatient');
     }
+    public function msgformessages(){
+        $this->view('pages/msgformessages');
+    }
+    public function msgfordonnateurs(){
+        $this->view('pages/messagesfordonnateurs');
+    }
+
 }
 ?>
 
