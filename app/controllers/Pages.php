@@ -5,6 +5,7 @@ class Pages extends Controller
     public function __construct() {
         $this->messagesmodel = $this->model('Message');
         $this->patientmodel = $this->model('Patient');
+        $this->donnateurmodel = $this->model('Donnateur');
     }
     //  function rendring view for index  :
     public function index() {
@@ -42,9 +43,9 @@ class Pages extends Controller
    
 
 
-    public function admindonnateurs(){
-        $this->view('pages/admindonnateurs');
-    }
+    // public function admindonnateurs(){
+    //     $this->view('pages/admindonnateurs');
+    // }
     // public function adminpatients(){
     //     $this->view('pages/adminpatients');
     // }
@@ -57,6 +58,9 @@ class Pages extends Controller
     }
     public function msgfordonnateurs(){
         $this->view('pages/messagesfordonnateurs');
+    }
+    public function editpublications(){
+        $this->view('pages/editpublications');
     }
 
 }

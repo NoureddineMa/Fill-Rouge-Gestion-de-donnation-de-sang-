@@ -17,7 +17,7 @@
 
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start  " id="menu ">
                         <li class="nav-item mb-3 side-hover " style="font-size: 16px; ">
-                            <a href="<?php echo URLROOT;?>./pages/admindonnateurs" class="btn align-middle  ">
+                            <a href="<?php echo URLROOT;?>./donnateurs/showDonnateurs" class="btn align-middle  ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-arrow-up-right-circle-fill text-danger " viewBox="0 0 16 16 ">
                                     <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z "/>
                                   </svg>

@@ -9,7 +9,7 @@
             }
 
           public function showDonnateurs(){
-            $data = $this->donnateurmodel->getpatients();
+            $data = $this->donnateurmodel->getdonnateurs();
             $this->view('pages/admindonnateurs',$data);
           }
 
