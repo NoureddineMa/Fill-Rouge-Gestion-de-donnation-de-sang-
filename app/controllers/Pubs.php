@@ -17,7 +17,7 @@
          // end function affichage  
 
 
-          // function affichage patients for admin
+          // function affichage patients for User
 
         public function showpubsUser(){
             $data = $this->pubmodel->getpubs();

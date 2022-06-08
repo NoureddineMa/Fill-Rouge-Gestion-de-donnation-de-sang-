@@ -107,7 +107,7 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="<?php echo URLROOT; ?>/pages/donnateurpublication" class="btn px-5 " style="color: white; background-color:black; margin:  0 auto;">VOIR PLUS D'ARTICLES</a>
+            <a href="<?php echo URLROOT; ?>/pubs/showpubsUser" class="btn px-5 " style="color: white; background-color:black; margin:  0 auto;">VOIR PLUS D'ARTICLES</a>
         </div>
 
     </section>

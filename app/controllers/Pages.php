@@ -24,14 +24,11 @@ class Pages extends Controller
     public function donnateurrdv(){
         $this->view('pages/donnateurrdv');
     }
-    public function donnateurpublication(){
-        $this->view('pages/donnateurpublication');
-    }
+    // public function donnateurpublication(){
+    //     $this->view('pages/donnateurpublication');
+        
+    // }
     public function patient(){
-
-        // $data = $this->patientmodel->getpatients();
-        // var_dump($data);
-        // exit;
         $this->view('pages/patient');
     }
     public function patientrdv(){
