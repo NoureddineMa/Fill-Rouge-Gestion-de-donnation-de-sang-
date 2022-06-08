@@ -38,10 +38,13 @@ class Pages extends Controller
     public function login(){
         $this->view('pages/login');
     }
+    
+   
+
+
     public function admindonnateurs(){
         $this->view('pages/admindonnateurs');
     }
-   
     // public function adminpatients(){
     //     $this->view('pages/adminpatients');
     // }
