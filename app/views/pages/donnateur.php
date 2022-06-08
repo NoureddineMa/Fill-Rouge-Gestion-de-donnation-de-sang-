@@ -57,6 +57,7 @@
                                             </tr>
                                             </thead>
                                             <tbody>
+                                            <?php if(!empty($data)){ ?>  
                                             <?php foreach ($data as $value) : ?>
                                             <tr>
                                             <td class="font-weight-light"> <small><?php echo $value->Nom_patient  ?></small></td>
@@ -68,8 +69,14 @@
                                             <td class="text-danger"><small><?php echo $value->Sang_patient  ?></small></td>
                                             <td><small><?php echo $value->date_de_naissance_p  ?></small></td>
                                             <?php endforeach;  ?>
+                                            <?php } ?>
                                             </tr>
-            
+                                            <?php if(empty($data)) {
+                                                echo "<div class='alert alert-danger mx-auto w-50 text-center' role='alert'>
+                                                Y'a Aucun Patient A affichier Pour l'instant !!
+                                                ";
+                                            }
+                                            ?>
                                     </tbody>
                                 </table>
                             </div>

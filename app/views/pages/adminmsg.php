@@ -32,6 +32,7 @@
                          </tr>
                      </thead>
                          <tbody>
+                         <?php if(!empty($data)){ ?>  
                          <?php foreach ( $data as $value) : ?>
                          <tr>
                         <td class="font-weight-light"> <small><?php echo $value->Nom ?></small></td>
@@ -40,6 +41,15 @@
                         <td><small><?php echo $value->Contexte ?></small></td>
                         <td ><small><?php echo $value->Msg ?></small></td>
                         <?php endforeach; ?>
+                        <?php } ?>
+                            <?php if(empty($data)) {
+                                echo "
+                                     <div class='alert alert-danger mx-auto w-50 text-center' role='alert'>
+                                      Y'a Aucun Message  A affichier Pour l'instant !!
+                                    </div>
+                                ";
+                              }  
+                            ?>
                         </tr>
                     </tbody>
                  </table>

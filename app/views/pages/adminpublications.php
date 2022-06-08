@@ -27,8 +27,8 @@
                     <div class="d-flex flex-column text-center justify-content-center">
                         <h1>VOILA LA PAGE DES PUBLICATIONS</h1>
                         <p>Pour ajouter des publications veuillez cliquez sur ce button</p>
-                        <div class="col-md-4 d-flex justify-content-center">
-                            <button type="button" class="btn  text-white bg-danger  mb-3" data-toggle="modal" data-target="#modal-form">ajouter</button>
+                        <div class="col-md-4 d-flex mx-auto " style="left:122px">
+                            <button type="button" class="btn  text-white bg-danger d-flex   mb-3" data-toggle="modal"  data-target="#modal-form">ajouter</button>
                             <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
                                     <div class="modal-content">
@@ -77,7 +77,7 @@
 
 
                                                         <div class="text-center">
-                                                            <button type="submit" name="submit" class="btn btn-primary my-4">Ajouter</button>
+                                                            <button type="submit" name="submit" class="btn btn-danger  my-4">Ajouter</button>
                                                         </div>
                                                     </form>
 
@@ -94,6 +94,9 @@
                         
                         
                        <!-- // foreach  -->
+                       <?php 
+        if(!empty($data)){
+        ?>
                         <?php foreach ($data as $value) : ?>
                         <div class="col-lg-3 col-sm-6  col-12 pt-4 ">
                             <div class="card" style="width: 18rem;">
@@ -112,6 +115,15 @@
                             </div>
                         </div>
                       <?php endforeach; ?>
+                      <?php } ?>
+                      <?php if(empty($data)) {
+        echo "
+             <div class='alert alert-danger mx-auto w-50 text-center' role='alert'>
+              Y'a Aucune Publication A Affichier Pour l'instant !!
+            </div>
+        ";
+      }  
+    ?>
                       <!-- end foreach  -->
 
                     </div>

@@ -11,7 +11,9 @@
     <h3 class="text-danger text-center py-5">TOUTES LES PUBLICATIONS</h3>
     <div class="mb-4 d-flex flex-row justify-content-around  flex-wrap ">
                         
-                        
+    <?php 
+        if(empty($user)){
+        ?>
                        <!-- // foreach  -->
                         <?php foreach ($data as $value) : ?>
                         <div class="col-lg-3 col-sm-6  col-12 pt-4 ">
@@ -23,10 +25,20 @@
                                 </div>
                             </div>
                         </div>
-                      <?php endforeach; ?>
+                      <?php endforeach;} ?>
                       <!-- end foreach  -->
 
                     </div>
+                
+                    <?php 
+      if(empty($data)) {
+        echo "
+             <div class='alert alert-danger mx-auto w-50 text-center d-flex justify-content-center' role='alert';>
+              There are no Publications yet!
+            </div>
+        ";
+      }  
+    ?>
 
 
    <!-- --------------------------footer---------------------------- -->

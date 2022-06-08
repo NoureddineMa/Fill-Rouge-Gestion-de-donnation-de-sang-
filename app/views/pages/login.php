@@ -1,12 +1,12 @@
 <?php require APPROOT . '/views/inc/head.php'; ?>
 
 
-<body class="index-page bg-dark">
+<body class="index-page bg-white">
 
 
     <div class="title d-flex justify-content-center flex-column text-center">
-        <img src="<?php echo URLROOT; ?>/assets/img/logoW.png" alt="logo" style="width:40px;margin: 0 auto;">
-        <h1 class="text-white"> <small>ESPACE ADMIN<i></small></h1>
+        <img src="<?php echo URLROOT; ?>/assets/img/logoR.png" alt="logo" style="width:40px;margin: 0 auto;">
+        <h1 class="text-dark"> <small>ESPACE ADMIN<i></small></h1>
     </div>
 
     <section class="login d-flex flex-row justify-content-center align-items-center justify-content-around ">
@@ -14,18 +14,23 @@
             <img src="<?php echo URLROOT; ?>/assets/img/Admin-rafiki.png" class="mt-2" alt="Admin Picture" style="width: 35VW;">
         </div>
         <div class="form-login  px-5 py-5 mr-5  rounded w-50" style="background-color: var(--Rouge);">
-            <form>
+            <form method="POST" action="<?php echo URLROOT; ?>/users/login" >
+            <?php flash('register_success'); ?>
                 <h3 class="text-center text-white font-weight-bold mb-3">LOGIN</h3>
                 <div class="form-group">
                     <label for="exampleInputEmail1" class="text-white">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email"  name="Email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"class="form-control
+                     <?php echo (!empty($data['Email_err'])) ? 'is-invalid' : ''; ?>" 
+                      value="<?php if(isset($data['Email'])) { echo $data['Email']; } ?>">
+                    <span class=" text-dark"><small><?php if(isset($data['Email_err'])) { echo $data['Email_err']; } ?></small></span>
                 </div>
                 <div class="form-group mb-2">
                     <label for="exampleInputPassword1" class="text-white">Mot de Passe </label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password"  name="Password" id="exampleInputPassword1" placeholder="Password"class="form-control 
+                    <?php echo (!empty($data['Password_err'])) ? 'is-invalid' : ''; ?>" value="<?php if(isset($data['Email'])) { echo $data['Password']; } ?>">
+            <span class=" text-dark"><small><?php if(isset($data['Password_err'])) { echo $data['Password_err']; } ?></small></span>
                 </div>
-
-                <button type="submit" class="btn btn-white text-danger mt-3 ">Se Connecter</button>
+                <button type="submit" name="submit" class="btn btn-white text-danger mt-3 ">Se Connecter</button>
             </form>
         </div>
     </section>

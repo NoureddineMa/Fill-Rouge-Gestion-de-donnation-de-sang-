@@ -41,6 +41,9 @@
 
                                             </tr>
                                             </thead>
+
+                                            <?php 
+                                            if(!empty($data)){ ?>
                                             <tbody>
                                             <?php foreach ($data as $value) : ?>
                                             <tr>
@@ -54,6 +57,17 @@
                                             <td><small><?php echo $value->date_de_naissance_p  ?></small></td>
                                             <?php endforeach;  ?>
                                             </tr>
+                                            <?php } ?>
+                                            <?php if(empty($data)) {
+        echo "
+             <div class='alert alert-danger mx-auto w-50 text-center' role='alert'>
+              Y'a Aucun Patient  A affichier Pour l'instant !!
+            </div>
+        ";
+      }  
+    ?>
+
+
             
                                     </tbody>
                                 </table>

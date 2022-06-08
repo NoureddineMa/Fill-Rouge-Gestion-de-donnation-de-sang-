@@ -2,18 +2,17 @@
 
 class Pages extends Controller
 {
-    public function __construct(){
+    public function __construct() {
         $this->messagesmodel = $this->model('Message');
         $this->patientmodel = $this->model('Patient');
     }
     //  function rendring view for index  :
-    public function index(){
-        
-        $this->view('pages/index');
+    public function index() {
 
+        $this->view('pages/index');
     }
     //  function rendring view for Contact us   :
-    public function contactus(){
+    public function contactus() {
         $this->view('pages/contactus');
     }
     
