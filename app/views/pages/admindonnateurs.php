@@ -20,12 +20,15 @@
                     <section class="tableau-patient">
 
         <h3 class=" container  mb-0">LEs DONNATEURS
-            <span class="badge badge-pill badge-danger text-uppercase fs-3" style="font-size: 23px;" ">5 DONNATEURS</span>
+            <span class="badge badge-pill badge-danger text-uppercase mb-3 fs-3" style="font-size: 23px;" ">5 DONNATEURS</span>
                             </h3>
+                            <p class="container">Voici la liste des Gens Qui veulent nous rejoindre pour etre parmis les donnataurs !                                 
+                                <small>Cliquer sur le statu en attente pour confirmez le rendez-vous ! </small>
+                            <p>
 
         <!-- table donnateurs                    -->
 
-        <div class="container-fluid table-responsive py-5 ">
+        <div class="container-fluid table-responsive py-5 ml-4 ">
                                 <table class="table table-borderless  table-striped  shadow p-3 mb--3 bg-body rounded ">
                                     <thead style=" color:white ; background-color:var(--Rouge); ">
                                         <tr>
@@ -38,7 +41,8 @@
                                             <th class="font-weight-light" scope="col ">PHONE</th>
                                             <th class="font-weight-light" scope="col ">SANG</th>
                                             <th class="font-weight-light" scope="col ">DATE DE NAISSANCE</th>
-                                            <th class="font-weight-light" scope="col">Status</th>
+                                            <th class="font-weight-light" scope="col">Statut</th>
+                                            <th class="font-weight-light" scope="col">Action</th>
                                             </tr>
                                             </thead>
 
@@ -52,11 +56,12 @@
                                             <td ><small><?php echo $value->Adresse_donnateur  ?></small></td>
                                             <td><small><?php echo $value->Adresse_donnateur  ?></small></td>
                                             <td ><small><?php echo $value->Email_donnateur  ?></small></td>
-                                            <td class="col-2"><small><?php echo $value->Phone_donnateur  ?></small></td>
+                                            <td><small><?php echo $value->Phone_donnateur  ?></small></td>
                                             <td class="text-danger"><small><?php echo $value->Sang_donnateur  ?></small></td>
                                             <td><small><?php echo $value->date_de_naissance_d  ?></small></td>
-                                            <td>  <a class="badge badge-pill btn-success btn mb-2" href="#" ">Accepter</a>
-                                                  <a class="badge badge-pill btn-danger btn " href="#" ">Supprimer</a>
+                                            <td>  <a class="badge badge-pill btn-warning btn mb-2"  href="<?php echo URLROOT; ?>/donnateurs/updatedonnateurs/<?php echo $value->id ?>">En attente</a> 
+                                            <td>  <a class="badge badge-pill btn-danger btn " href="<?php echo URLROOT; ?>/donnateurs/supprimerdonnateur/<?php echo $value->id ?>">Supprimer</a>
+ </td>   
                                         </td>
                                             
 

@@ -49,4 +49,41 @@ class Donnateur {
           return false;
         }
     }
+
+      //  requette update  En attente --> Accepte 
+
+        public function updatestatusdonnateur($id){
+            $this->db->query("UPDATE `donnateur` SET `status`= 'Accepter' WHERE id = $id");
+          
+            if($this->db->resultSet()){
+              return $this->db->resultSet();
+            } else {
+              return false;
+            }
+        
+          }
+
+      //  end  requette update status
+
+
+      // Start requette Delete  :
+
+      public function deletedonnateur($id){
+
+        $this->db->query("DELETE FROM donnateur WHERE `id`= :id");
+        $this->db->bind(':id',$id);
+
+        if ($this->db->execute()) {
+          return true;
+      } else {
+          return false;
+      }
+     }
+
+   // End requette Delete !
+
+
+
+
+     
 }

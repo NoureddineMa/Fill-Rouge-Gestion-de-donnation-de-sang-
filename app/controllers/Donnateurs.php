@@ -32,4 +32,22 @@
                       redirect('pages/msgfordonnateurs');
                 }
               }
+
+
+               //  function delete 
+        public function supprimerdonnateur($id){
+
+          $this->donnateurmodel->deletedonnateur($id);
+          redirect('donnateurs/showdonnateurs'); 
+          }
+      // end function delete 
+
+
+
+      // update status for donnateurs :
+      public function  updatedonnateurs($id){
+        $this->donnateurmodel->updatestatusdonnateur($id);
+        redirect('donnateurs/showdonnateurs');
+      }
+      // end function update for donnateurs
             }

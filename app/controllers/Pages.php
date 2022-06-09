@@ -43,9 +43,9 @@ class Pages extends Controller
    
 
 
-    // public function admindonnateurs(){
-    //     $this->view('pages/admindonnateurs');
-    // }
+    public function admindonnateurs(){
+        $this->view('pages/admindonnateurs');
+    }
     // public function adminpatients(){
     //     $this->view('pages/adminpatients');
     // }

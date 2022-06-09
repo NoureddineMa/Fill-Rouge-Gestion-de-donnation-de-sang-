@@ -52,7 +52,7 @@
 
             
             // rendring views after login succes *********************
-            redirect('pages/admindonnateurs');
+            redirect('donnateurs/showDonnateurs');
           } else {
             $data['Password_err'] = 'Password incorrect';
             $this->view('pages/login', $data);
