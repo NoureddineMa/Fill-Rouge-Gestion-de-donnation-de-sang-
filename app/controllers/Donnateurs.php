@@ -17,6 +17,12 @@
 
           }            
 
+          public function showDonnateursaccepte(){
+            $data = [];
+            $data["acc"] = $this-> donnateurmodel->getdonnateursaccepter();
+
+            $this->view('pages/patient',$data);
+          }
           
 
                 public function ajouterDonnateurs() {

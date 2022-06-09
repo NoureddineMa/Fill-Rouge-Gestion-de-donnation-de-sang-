@@ -1,7 +1,13 @@
  <!-- include head  -->
  <?php require APPROOT . '/views/inc/head.php'; ?>
     <!-- end head -->
+    <style>
+        *{
+            background-color:black;
+        }
 
+
+    </style>
 
     <section class="messagesdone">
 
@@ -11,7 +17,7 @@
         <img src="<?php echo URLROOT; ?>/assets/img/Done.png" class="animate__animated  animate__bounceInDown" style="width: 400px;" alt="Patient enregistré avec succes">
     </div>
     <div class="p-button">
-        <p class="text-dark font-weight-bold mb-5">Votre Message est Envoyé avec Succés !!</p>
+        <p class="text-white font-weight-bold mb-5">Votre Message est Envoyé avec Succés !!</p>
             <a href="<?php echo URLROOT; ?>/pages/index" class="btn btn-danger ">Retourner à l'accueil</a>
 
     </div>

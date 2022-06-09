@@ -39,34 +39,61 @@
                             </h3>
 
                             <div class="container table-responsive py-5 ">
-                                <table class="table table-borderless table-striped  shadow p-3 mb--3 bg-body rounded ">
-                                    <thead style=" color:white ; background-color:var(--Rouge); ">
-                                        <tr>
+                            <table class="table table-borderless  table-striped  shadow p-3 mb--3 bg-body rounded ">
+                            <thead style=" color:white ; background-color:var(--Rouge); ">
+                                <tr>
 
-                                            <th class="font-weight-light" scope="col " class=" ">NOM</th>
-                                            <th class="font-weight-light" scope="col ">PRENOM</th>
-                                            <th class="font-weight-light" scope="col ">ADRESSE</th>
-                                            <th class="font-weight-light" scope="col ">VILLE</th>
-                                            <th class="font-weight-light" scope="col ">EMAIL</th>
-                                            <th class="font-weight-light" scope="col-2 ">PHONE</th>
-                                            <th class="font-weight-light" scope="col ">SANG</th>
-                                            <th class="font-weight-light" scope="col ">DATE DE NAISSANCE</th>
+                                    <th class="font-weight-light" scope="col " class=" ">NOM</th>
+                                    <th class="font-weight-light" scope="col ">PRENOM</th>
+                                    <th class="font-weight-light" scope="col ">ADRESSE</th>
+                                    <th class="font-weight-light" scope="col ">VILLE</th>
+                                    <th class="font-weight-light" scope="col ">EMAIL</th>
+                                    <th class="font-weight-light" scope="col ">PHONE</th>
+                                    <th class="font-weight-light" scope="col ">SANG</th>
+                                    <th class="font-weight-light" scope="col ">DATE DE NAISSANCE</th>
+                                  
+                                    </tr>
+                                    </thead>
 
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                            <td class="font-weight-light"> <small>NOUREDDINE</small></td>
-                                            <td><small>MAHER</small></td>
-                                            <td ><small>HAY ABI REGREG RUE 20</small></td>
-                                            <td><small>RABAT</small></td>
-                                            <td ><small>Noureddinemaher13@gmail.com</small></td>
-                                            <td class="col-2"><small>+212 6 23 32 94 76</small></td>
-                                            <td class="text-danger"><small>A+</small></td>
-                                            <td><small>23-05-2000</small></td>
-                                            </tr>
-                                    </tbody>
-                                </table>
+
+                                    <?php
+                                      $acc =  $data["acc"];
+                                      
+                                    ?>
+
+                                    <?php 
+                                    if(!empty($acc)){ ?>
+                                    <tbody>
+                                    <?php foreach ($acc as $value) : ?>
+                                    <tr>
+                                    <td class="font-weight-light"> <small><?php echo $value->Nom_donnateur  ?></small></td>
+                                    <td><small><?php echo $value->Prenom_donnateur  ?></small></td>
+                                    <td ><small><?php echo $value->Adresse_donnateur  ?></small></td>
+                                    <td><small><?php echo $value->Adresse_donnateur  ?></small></td>
+                                    <td ><small><?php echo $value->Email_donnateur  ?></small></td>
+                                    <td><small><?php echo $value->Phone_donnateur  ?></small></td>
+                                    <td class="text-danger"><small><?php echo $value->Sang_donnateur  ?></small></td>
+                                    <td><small><?php echo $value->date_de_naissance_d  ?></small></td>
+</td>   
+                                </td>
+                                    
+
+                                    <?php endforeach;  ?>
+                                    </tr>
+                                    <?php } ?>
+                                    <?php if(empty($acc)) {
+echo "
+     <div class='alert alert-danger mx-auto w-50 text-center' role='alert'>
+      Y'a Aucun Donnateur  A affichier Pour l'instant !!
+    </div>
+";
+}  
+?>
+
+
+    
+                            </tbody>
+                        </table>
                             </div>
     </section>
 

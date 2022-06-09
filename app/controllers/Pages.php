@@ -30,6 +30,7 @@ class Pages extends Controller
         
     // }
     public function patient(){
+
         $this->view('pages/patient');
     }
     public function patientrdv(){

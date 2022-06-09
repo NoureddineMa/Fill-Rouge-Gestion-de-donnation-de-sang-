@@ -1,7 +1,13 @@
  <!-- include head  -->
  <?php require APPROOT . '/views/inc/head.php'; ?>
     <!-- end head -->
+    <style>
+        *{
+            background-color:black;
+        }
 
+
+    </style>
 
     <section class="messagesdone">
 
@@ -11,8 +17,8 @@
         <img src="<?php echo URLROOT; ?>/assets/img/wait.png" class="animate__animated  animate__bounceInDown" style="width: 400px;" alt="Patient enregistré avec succes">
     </div>
     <div class="p-button">
-    <p class="text-dark font-weight-bold">votre demande pour nous rejoindre est en attente jusqu'a l'acceptation <br> d'un admin merci de votre compréhension ! </p>
-                <p class="mb-5"> <small> Si vous avez d'autres questions N'hesitez pas de
+    <p class="text-white font-weight-bold">votre demande pour nous rejoindre est en attente jusqu'a l'acceptation <br> d'un admin merci de votre compréhension ! </p>
+                <p class="mb-5 text-white"> <small> Si vous avez d'autres questions N'hesitez pas de
                 <a href="#" class="text-danger"> nous contactez</a> </small></p>
                 <a href="<?php echo URLROOT; ?>/pages/index" class="btn btn-danger ">Retourner à l'accueil</a>
 

@@ -5,11 +5,11 @@
                         <a href="# " class="fal fa-caret-circle-left text-decoration-none text-muted "></a>
                         <form class="d-flex align-items-center ">
                             <div class="position ">
-                                <input class="form-control " type="search " placeholder="Search... " aria-label="Search ">
-                                <a href="# ">
-                                    <i class="fa-solid fa-magnifying-glass position-a "></i>
+                                <input class="form-control px-4 " type="search " placeholder="Search... " aria-label="Search ">
+                               
+                                    <img src="<?php echo URLROOT; ?>/assets/icons/icons.svg" class=" px-2 position-a " style="    width: 29px;">
                             </div>
-                            </a>
+                           
                         </form>
                     </div>
                 </nav>

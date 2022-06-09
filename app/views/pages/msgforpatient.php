@@ -3,6 +3,15 @@
     <!-- end head -->
 
 
+    <style>
+        *{
+            background-color:black;
+        }
+
+
+    </style>
+
+
     <section class="messagesdone">
 
 
@@ -11,9 +20,10 @@
         <img src="<?php echo URLROOT; ?>/assets/img/Done.png" class="animate__animated  animate__bounceInDown" style="width: 400px;" alt="Patient enregistré avec succes">
     </div>
     <div class="p-button">
-        <p class="text-dark font-weight-bold "> votre demande de sang est Publiée avec Succes ! <br> Nous espérons que vous pourrez trouver de l'aide le plus tôt possible <br> </p>
-        <p class="mb-5"> <small> Si vous avez d'autres questions N'hesitez pas de
-            <a href="#" class="text-danger"> nous contactez</a> </small></p>
+        <p class="text-white font-weight-bold "> votre demande de sang est Publiée avec Succes ! <br> Nous espérons que vous pourrez trouver de l'aide le plus tôt possible <br> </p>
+        <p class=" text-white mb-5"> <small> Si vous avez d'autres questions N'hesitez pas de
+            <a href="#" class="text-danger"> nous contactez</a> </small>
+        </p>
 
             <a href="<?php echo URLROOT; ?>/pages/index" class="btn btn-danger ">Retourner à l'accueil</a>
 

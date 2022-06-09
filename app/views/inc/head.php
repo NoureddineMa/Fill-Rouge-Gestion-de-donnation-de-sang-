@@ -10,17 +10,12 @@
     </title>
 
     <!--     Fonts and icons     -->
-    <!-- Nucleo Icons -->
-    <link href="<?php echo URLROOT; ?>/assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="<?php echo URLROOT; ?>/assets/css/nucleo-svg.css" rel="stylesheet" />
-    <!-- Font Awesome Icons -->
-    <link href="<?php echo URLROOT; ?>/assets/css/font-awesome.css" rel="stylesheet" /> 
-    <link href="<?php echo URLROOT; ?>/assets/css/nucleo-svg.css" rel="stylesheet" />
+   
     
      <!-- CSS Files -->
     <link href="<?php echo URLROOT; ?>/assets/css/argon-design-system.css?v=1.2.2" rel="stylesheet" />
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- link animate css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>

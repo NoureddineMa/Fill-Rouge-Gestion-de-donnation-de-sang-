@@ -49,14 +49,14 @@
 
                                             <?php 
                                             
-                                            $accepted =  $data["not-accepted"]
+                                            $notAccepted =  $data["not-accepted"]
                                             
                                             ?>
 
                                             <?php 
-                                            if(!empty($accepted)){ ?>
+                                            if(!empty($notAccepted)){ ?>
                                             <tbody>
-                                            <?php foreach ($accepted as $value) : ?>
+                                            <?php foreach ($notAccepted as $value) : ?>
                                             <tr>
                                             <td class="font-weight-light"> <small><?php echo $value->Nom_donnateur  ?></small></td>
                                             <td><small><?php echo $value->Prenom_donnateur  ?></small></td>
@@ -75,7 +75,7 @@
                                             <?php endforeach;  ?>
                                             </tr>
                                             <?php } ?>
-                                            <?php if(empty($accepted)) {
+                                            <?php if(empty($notAccepted)) {
         echo "
              <div class='alert alert-danger mx-auto w-50 text-center' role='alert'>
               Y'a Aucune demande de donnation  A affichier Pour l'instant !!
@@ -108,7 +108,7 @@
 
 <!-- table donnateurs                    -->
 
-<div class="container-fluid table-responsive py-3 ml-4 ">
+<div class="container-fluid table-responsive  ml-4 py-3 ">
                         <table class="table table-borderless  table-striped  shadow p-3 mb--3 bg-body rounded ">
                             <thead style=" color:white ; background-color:var(--Rouge); ">
                                 <tr>
@@ -128,14 +128,14 @@
 
 
                                     <?php
-                                      $notAccepted =  $data["accepted"]
+                                      $accepted =  $data["accepted"]
                                     
                                     ?>
 
                                     <?php 
-                                    if(!empty($notAccepted)){ ?>
+                                    if(!empty($accepted)){ ?>
                                     <tbody>
-                                    <?php foreach ($notAccepted as $value) : ?>
+                                    <?php foreach ($accepted as $value) : ?>
                                     <tr>
                                     <td class="font-weight-light"> <small><?php echo $value->Nom_donnateur  ?></small></td>
                                     <td><small><?php echo $value->Prenom_donnateur  ?></small></td>
@@ -154,7 +154,7 @@
                                     <?php endforeach;  ?>
                                     </tr>
                                     <?php } ?>
-                                    <?php if(empty($notAccepted)) {
+                                    <?php if(empty($accepted)) {
 echo "
      <div class='alert alert-danger mx-auto w-50 text-center' role='alert'>
       Y'a Aucun Donnateur  A affichier Pour l'instant !!

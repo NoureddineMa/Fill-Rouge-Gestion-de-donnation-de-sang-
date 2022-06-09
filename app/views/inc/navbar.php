@@ -31,7 +31,7 @@
                         <a href="<?php echo URLROOT; ?>/pages/donnateur" class="nav-link nav-link-icon  ml-3 nav-link-hover">Je donne mon sang</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo URLROOT; ?>/pages/patient" class="nav-link nav-link-icon  ml-3 mr-3 nav-link-hover">Besoin de sang</a>
+                        <a href="<?php echo URLROOT; ?>/donnateurs/showDonnateursaccepte" class="nav-link nav-link-icon  ml-3 mr-3 nav-link-hover">Besoin de sang</a>
                     </li>
                     <li class="nav-item">
                         <a href="<?php echo URLROOT; ?>/pubs/showpubsUser" class="nav-link nav-link-icon  ml-3 nav-link-hover">Publications</a>
