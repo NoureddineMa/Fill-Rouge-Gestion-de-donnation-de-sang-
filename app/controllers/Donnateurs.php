@@ -9,10 +9,15 @@
             }
 
           public function showDonnateurs(){
-            $data = $this->donnateurmodel->getdonnateurs();
-            $this->view('pages/admindonnateurs',$data);
-          }
+            $data = [];
+            $data["accepted"] = $this->donnateurmodel->getdonnateursaccepter();
+            $data["not-accepted"] = $this->donnateurmodel->getdonnateursNonaccepte();
 
+            $this->view('pages/admindonnateurs',$data);
+
+          }            
+
+          
 
                 public function ajouterDonnateurs() {
                     if(isset($_POST['submit'])){

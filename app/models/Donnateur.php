@@ -10,10 +10,10 @@ class Donnateur {
       }
 
 
-    //   function qui selectionne que les donnateur accepré
+    //   function qui selectionne que les donnateur en attente
     
-      public function getdonnateurs(){
-        $this->db->query("SELECT * FROM `donnateur`");
+      public function getdonnateursNonaccepte(){
+        $this->db->query("SELECT * FROM `donnateur` WHERE status = 'En attente' ");
 
         // excute query 
 
@@ -24,6 +24,20 @@ class Donnateur {
        }
        
     }
+        //   function qui selectionne que les donnateur Accepte
+
+    public function getdonnateursaccepter(){
+      $this->db->query("SELECT * FROM `donnateur` WHERE status = 'Accepter'");
+
+      // excute query 
+
+     if($this->db->resultSet()){
+       return $this->db->resultSet();
+     } else {
+       return false;
+     }
+     
+  }
     
     
 
