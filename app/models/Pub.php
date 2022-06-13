@@ -100,8 +100,12 @@
         
         }
 
-   
 
-
+        // get number of patient 
+     public function getPubscount(){
+      $this->db->query("SELECT COUNT(*) as count  FROM publications");
+  
+      return $this->db->resultSet();
+     }
 
   }

@@ -16,6 +16,14 @@
                     </div>
 
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start  " id="menu ">
+                    <li class="nav-item mb-3 side-hover " style="font-size: 16px; ">
+                            <a href="<?php echo URLROOT;?>./homeadmin/showStatistiques" class="btn align-middle  ">
+                            <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-arrow-up-right-circle-fill text-danger " viewBox="0 0 16 16 ">
+                                    <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z "/>
+                                  </svg>
+                                <h2 class="ms-1 d-none d-sm-inline mt-4 text-white " style="font-size:10px; ">Home</h2>
+                            </a>
+                        </li>
                         <li class="nav-item mb-3 side-hover " style="font-size: 16px; ">
                             <a href="<?php echo URLROOT;?>./donnateurs/showDonnateurs" class="btn align-middle  ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-arrow-up-right-circle-fill text-danger " viewBox="0 0 16 16 ">
@@ -24,6 +32,7 @@
                                 <h2 class="ms-1 d-none d-sm-inline mt-4 text-white " style="font-size:10px; ">Les Donnateurs</h2>
                             </a>
                         </li>
+                        
                         <li class="mb-3 side-hover ">
                             <a href="<?php echo URLROOT;?>./messages/adminmsg" data-bs-toggle="collapse " class="btn align-middle text-dark ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-chat-left-dots-fill text-danger " viewBox="0 0 16 16 ">

@@ -23,14 +23,17 @@
                      <?php echo (!empty($data['Email_err'])) ? 'is-invalid' : ''; ?>" 
                       value="<?php if(isset($data['Email'])) { echo $data['Email']; } ?>">
                     <span class=" text-dark"><small><?php if(isset($data['Email_err'])) { echo $data['Email_err']; } ?></small></span>
+                    <span id="Email"></span>
                 </div>
                 <div class="form-group mb-2">
                     <label for="exampleInputPassword1" class="text-white">Mot de Passe </label>
                     <input type="password"  name="Password" id="exampleInputPassword1" placeholder="Password"class="form-control 
                     <?php echo (!empty($data['Password_err'])) ? 'is-invalid' : ''; ?>" value="<?php if(isset($data['Email'])) { echo $data['Password']; } ?>">
             <span class=" text-dark"><small><?php if(isset($data['Password_err'])) { echo $data['Password_err']; } ?></small></span>
-                </div>
-                <button type="submit" name="submit" class="btn btn-white text-danger mt-3 ">Se Connecter</button>
+            <span id="Email"></span>
+       
+        </div>
+                <button type="submit" id="submit" name="submit" class="btn btn-white text-danger mt-3 ">Se Connecter</button>
             </form>
         </div>
     </section>
@@ -52,6 +55,10 @@
     <script src="./assets/js/plugins/moment.min.js "></script>
     <script src="./assets/js/plugins/datetimepicker.js " type="text/javascript "></script>
     <script src="./assets/js/plugins/bootstrap-datepicker.min.js "></script>
+    <script src=""></script>
+
+
+
 </body>
 
 </html>

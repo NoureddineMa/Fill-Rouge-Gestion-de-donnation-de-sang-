@@ -16,13 +16,13 @@
                 <section class="tableau-patient " style="position: relative;
                 ">
                     <div class="title-cards d-flex justify-content-center">
-                    <h3 class=" display-2 mb-0 ">VOICI LA LISTE DES PATIENTS</h3>
+                    <h3 class=" display-4 mb-0 ">VOICI LA LISTE DES PATIENTS</h3>
+
                 </div>
                 <hr class="bg-danger mb-3 w-50 ">
               
 
                     <h3 class=" container mt-3 mb-0 ">LES PATIENTS
-                        <span class="badge badge-pill badge-danger text-uppercase fs-3 " style="font-size: 23px; ">5 PATIENTS</span>
                     </h3>
 
                     <div class="container table-responsive py-5 ">

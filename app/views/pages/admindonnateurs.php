@@ -21,7 +21,6 @@
                         
                     <div class="ml-5">
         <h3 class="   mb-0">LEs DEMANDES DE  DONNATION
-            <span class="badge badge-pill badge-danger text-uppercase  fs-3" style="font-size: 23px;" ">5 DONNATEURS</span>
                             </h3>
                             <p class="">Voici la liste des Gens Qui veulent nous rejoindre pour etre parmis les donnataurs !                                 
                             <p>
@@ -101,7 +100,6 @@
     <section class="tableau-patient mt-5">
 <div class="ml-5">
 <h3 class="   mb-0">LEs  DONNATEURS
-    <span class="badge badge-pill badge-danger text-uppercase  fs-3" style="font-size: 23px;" ">5 DONNATEURS</span>
                     </h3>
                     <p class="">Voici la liste des donnataurs !                                 
                     <p>

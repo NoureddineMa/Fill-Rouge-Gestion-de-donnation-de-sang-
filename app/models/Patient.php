@@ -45,4 +45,13 @@ class Patient {
           return false;
         }
     }
+
+
+
+    // get number of patient 
+    public function getPatientscount(){
+      $this->db->query("SELECT COUNT(*) as count  FROM patient");
+  
+      return $this->db->resultSet();
+     }
 }

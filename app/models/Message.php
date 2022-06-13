@@ -42,4 +42,11 @@ class Message {
           return false;
         }
     }
+
+
+    public function getMessagescount(){
+      $this->db->query("SELECT COUNT(*) as count  FROM messages");
+  
+      return $this->db->resultSet();
+     }
 }

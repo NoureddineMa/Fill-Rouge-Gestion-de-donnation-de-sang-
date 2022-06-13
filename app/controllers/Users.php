@@ -52,7 +52,7 @@
 
             
             // rendring views after login succes *********************
-            redirect('donnateurs/showDonnateurs');
+            redirect('homeadmin/showStatistiques');
           } else {
             $data['Password_err'] = 'Password incorrect';
             $this->view('pages/login', $data);

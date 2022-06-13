@@ -25,7 +25,7 @@
                 <main class="container-fluid mt-5" style="position: relative;
                 left: 50px;">
                     <div class="d-flex flex-column text-center justify-content-center">
-                        <h1>VOILA LA PAGE DES PUBLICATIONS</h1>
+                        <h3 class="display-4 mb-0 ">VOILA LA PAGE DES PUBLICATIONS</h3>
                         <p>Pour ajouter des publications veuillez cliquez sur ce button</p>
                         <div class="col-md-4 d-flex mx-auto " style="left:122px">
                             <button type="button" class="btn  text-white bg-danger d-flex   mb-3" data-toggle="modal"  data-target="#modal-form">ajouter</button>

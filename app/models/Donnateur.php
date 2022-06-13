@@ -97,7 +97,19 @@ class Donnateur {
    // End requette Delete !
 
 
+  //  COUNT NUMBERS OF DONNATEURS  :
+  public function getDonnateurAccepterNumber(){
+    $this->db->query("SELECT COUNT(*) as count FROM donnateur WHERE status='Accepter'");
 
+    return $this->db->resultSet();
+   }
 
-     
+   //  COUNT AWAITING DONNATEURS
+   public function getDonnateurwaiting(){
+    $this->db->query("SELECT COUNT(*) as count  FROM donnateur WHERE status='En attente'");
+
+    return $this->db->resultSet();
+   }
+   
+
 }
