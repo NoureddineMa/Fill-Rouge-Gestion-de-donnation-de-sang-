@@ -64,7 +64,7 @@
   
             $data = [
               'id' => $id,
-              'Image' => $_POST['ImagLLe'],
+              'Image' => $_POST['Image'],
               'Title' => trim($_POST['Title']),
               'Description' => trim($_POST['Description']),
 

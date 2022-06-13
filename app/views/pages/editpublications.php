@@ -25,7 +25,7 @@
         <div class="input-group-prepend">
 
         </div>
-        <input class="form-control"  type="file" name="Image" value="<?php echo  $data->Image ; ?>">
+        <input class="form-control"  type="file" name="Image">
     </div>
 </div>
 
