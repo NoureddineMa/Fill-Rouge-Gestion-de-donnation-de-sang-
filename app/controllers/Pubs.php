@@ -52,8 +52,35 @@
             $this->pubmodel->deletepub($id);
             redirect('pubs/showpubs'); 
             }
+            
         // end function delete 
 
 
 
+        // function update
+        public function pubsedit($id) {
+
+          if(isset($_POST['submit'])){
+  
+            $data = [
+              'id' => $id,
+              'Image' => $_POST['ImagLLe'],
+              'Title' => trim($_POST['Title']),
+              'Description' => trim($_POST['Description']),
+
+            ];
+    
+            $this->pubmodel->editpubs($data);
+    
+            redirect('pubs/showpubs');
+          }
+  
+         $data  = $this->pubmodel->getPubsbyId($id);
+          
+          $this->view('pages/editpublications',$data);
+          
+        }
+
+
+        // end function Update
     }

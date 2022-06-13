@@ -4,10 +4,10 @@
             <a href="<?php echo URLROOT; ?>/pages/index">
             <img src="<?php echo URLROOT; ?>/assets/img/logo.png" alt="le logo" class="logo-navbar">
 </a>
-            <button class="navbar-toggler " style="color:red;" type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbar-info" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed " style="color:red;" type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbar-info" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="color:black;"></span>
           </button>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="navbar-danger">
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">

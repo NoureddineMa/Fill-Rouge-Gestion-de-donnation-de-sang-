@@ -64,10 +64,11 @@
                                             <td><small><?php echo $value->Adresse_donnateur  ?></small></td>
                                             <td ><small><?php echo $value->Email_donnateur  ?></small></td>
                                             <td><small><?php echo $value->Phone_donnateur  ?></small></td>
-                                            <td class="text-danger"><small><?php echo $value->Sang_donnateur  ?></small></td>
+                                            <td class=""><small><?php echo $value->Sang_donnateur  ?></small></td>
                                             <td><small><?php echo $value->date_de_naissance_d  ?></small></td>
-                                            <td>  <a class="badge badge-pill btn-warning btn"  href="<?php echo URLROOT; ?>/donnateurs/updatedonnateurs/<?php echo $value->id ?>">En attente</a> 
-                                            <td>  <a class="badge badge-pill btn-danger btn " href="<?php echo URLROOT; ?>/donnateurs/supprimerdonnateur/<?php echo $value->id ?>">Refusez</a>
+                                            <td  class="text-warning"><small>En Attente</small></td>
+                                            <td>  <a class="badge badge-pill btn-success btn"  href="<?php echo URLROOT; ?>/donnateurs/updatedonnateurs/<?php echo $value->id ?>">Accepter</a> 
+                                          <a class="badge badge-pill btn-danger btn " href="<?php echo URLROOT; ?>/donnateurs/supprimerdonnateur/<?php echo $value->id ?>">Refusez</a> </td>
  </td>   
                                         </td>
                                             
@@ -143,9 +144,9 @@
                                     <td><small><?php echo $value->Adresse_donnateur  ?></small></td>
                                     <td ><small><?php echo $value->Email_donnateur  ?></small></td>
                                     <td><small><?php echo $value->Phone_donnateur  ?></small></td>
-                                    <td class="text-danger"><small><?php echo $value->Sang_donnateur  ?></small></td>
+                                    <td class=""><small><?php echo $value->Sang_donnateur  ?></small></td>
                                     <td><small><?php echo $value->date_de_naissance_d  ?></small></td>
-                                    <td>  <span class="badge badge-pill badge-success text-uppercase">Accepté</span> 
+                                    <td>  <small class="text-success">Accepté</small> </td>
                                     <td>  <a class="badge badge-pill btn-danger btn " href="<?php echo URLROOT; ?>/donnateurs/supprimerdonnateur/<?php echo $value->id ?>">Supprimer</a>
 </td>   
                                 </td>

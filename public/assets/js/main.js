@@ -3,7 +3,6 @@ let section = document.querySelector(".three");
 let started = false; // function Started ? No :)
 let off = section.offsetTop - 600;
 
-
 window.onscroll = function() {
     if (window.scrollY >= off) {
         if (!started) {

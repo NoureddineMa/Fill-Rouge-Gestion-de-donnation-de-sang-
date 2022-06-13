@@ -13,10 +13,12 @@
             <?php require APPROOT . '/views/inc/navbaradmin.php'; ?>
             <!-- end navbar  -->
 
-              
 
-            <form role="form" class="w-50" action="<?php echo URLROOT; ?>/Pubs/ajouterpub"" method="POST">
-
+        
+        
+            <form role="form" class="w-75" style="    left: 149px;
+    position: relative;
+    margin-top: 50px;"  method="POST">
 
 <div class="form-group mb-3">
     <div class="input-group input-group-alternative">
@@ -31,7 +33,7 @@
     <div class="input-group input-group-alternative">
         <div class="input-group-prepend">
         </div>
-        <input class="form-control"  type="text" name="Title" value="<?php echo  $data->Title ; ?>" >
+        <input class="form-control"  type="text" name="Title" value="<?php echo  $data->Title ?>" >
     </div>
 </div>
 
@@ -39,7 +41,7 @@
     <div class="input-group input-group-alternative">
         <div class="input-group-prepend">
         </div>
-        <input class="form-control" name="Description"  type="text" style="padding:40px 0;" <?php echo  $data->Description ; ?> >
+        <input class="form-control" name="Description"  type="text" style="padding:40px 0;" value=" <?php echo  $data->Description ?>" >
     </div>
 </div>
 
