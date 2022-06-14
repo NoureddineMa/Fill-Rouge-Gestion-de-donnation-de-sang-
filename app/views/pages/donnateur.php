@@ -37,7 +37,6 @@
     <section class="tableau-patient">
 
         <h3 class=" container  mb-0">LES PATIENTS
-            <span class="badge badge-pill badge-danger text-uppercase fs-3" style="font-size: 23px;">5 PATIENTS</span>
         </h3>
 
         <div class="container table-responsive py-5 ">

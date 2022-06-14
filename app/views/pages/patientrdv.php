@@ -15,35 +15,42 @@
         <div class="form-row ">
             <div class="form-group col-md-6 ">
                 <label for="inputEmail4 ">NOM <span class="text-danger"> *</span> :</label>
-                <input type="email " name="Nom_patient" class="form-control " id="inputEmail4 " placeholder="Veuillez Entrer Votre Nom  ">
+                <input type="email " name="Nom_patient" class="form-control " id="Nom_patient" placeholder="Veuillez Entrer Votre Nom " onkeyup="ValidationName()">
+                <div id="Nom_err_patient"></div>
             </div>
             <div class="form-group col-md-6 ">
                 <label for="inputPassword4 ">PRENOM <span class="text-danger"> *</span> :</label>
-                <input type="password " name="Prenom_patient" class="form-control " id="inputPassword4 " placeholder="Veuillez Entrer Votre Prenom  ">
+                <input type="password " name="Prenom_patient" class="form-control " id="Prenom_patient" placeholder="Veuillez Entrer Votre Prenom  ">
+                <div id="Prenom_err_patient"></div>
             </div>
         </div>
         <div class="form-row ">
             <div class="form-group col-md-6 ">
                 <label for="inputEmail4 ">ADRESSE <span class="text-danger"> *</span> :</label>
-                <input type="email " name="Adresse_patient" class="form-control " id="inputEmail4 " placeholder="Veuillez Entrer Votre Nom  ">
+                <input type="email " name="Adresse_patient" class="form-control " id="Adresse_patient" placeholder="Veuillez Entrer Votre Adresse  ">
+                <div id="Adresse_err_patient"></div>
             </div>
             <div class="form-group col-md-6 ">
                 <label for="inputPassword4 ">VILLE <span class="text-danger"> *</span> :</label>
-                <input type="password " name="Ville_patient" class="form-control " id="inputPassword4 " placeholder="Veuillez Entrer Votre Prenom  ">
+                <input type="password " name="Ville" class="form-control " id="Ville_patient" placeholder="Veuillez Entrer Votre Ville  ">
+                <div id="Ville_err_patient"></div>
             </div>
+            
         </div>
         <div class="form-group ">
             <label for="inputAddress2 ">EMAIL <span class="text-danger"> *</span> :</label>
-            <input type="text "name="Email_patient" class="form-control " id="inputAddress2 " placeholder="Veuillez Entrer Votre Mail ">
+            <input type="text "name="Email_patient" class="form-control " id="Email_patient" placeholder="Veuillez Entrer Votre Mail ">
+            <div id="Email_err_patient"></div>
         </div>
         <div class="form-group ">
             <label for="inputAddress2 ">NUMERO DE TELEPHONE <span class="text-danger"> *</span> :</label>
-            <input type="text " name="Phone_patient" class="form-control " id="inputAddress2 " placeholder="Veuillez Entrer Votre Numero de telephone ">
+            <input type="text " name="Phone_patient" class="form-control " id="Num_patient" placeholder="Veuillez Entrer Votre Numero de telephone ">
+            <div id="Num_err_patient"></div>
         </div>
             <div class="form-group">
             <label for="inputAddress2 ">NATURE DE SANG <span class="text-danger"> *</span> :</label>
-            <select class="form-control " name="Sang_patient">
-              <option selected>--Groupe Sanguin--</option>
+            <select class="form-control " name="Sang_patient" required="required">
+              <option value="" disabled selected>--Groupe Sanguin--</option>
               <option value="O-">O-</option>
             <option value="O+">O+</option>
             <option value="B">B-</option>
@@ -57,19 +64,16 @@
         </div>
         <div class="form-group ">
             <label for="inputAddress2 ">DATE DE NAISSANCE <span class="text-danger"> *</span> :</label>
-            <input type="date" name="date_de_naissance_p" class="form-control">
+            <input type="date" id="Date_patient" name="date_de_naissance_p" class="form-control">
+            <div id="Date_err_patient"></div>
         </div>
         
 
-        <button type="submit " name="submit" class="btn btn-danger ">Envoyez</button>
+        <button type="submit " id="submit_patient" name="submit" class="btn btn-danger ">Envoyez</button>
     </form>
 
 
-
-
-
-
-
+    <script src="<?php echo URLROOT; ?>/assets/js/formpatient.js"></script>
     <!-- --------------------------footer---------------------------- -->
 <?php  require APPROOT . '/views/inc/footer.php';  ?>
     <!-- Footer -->

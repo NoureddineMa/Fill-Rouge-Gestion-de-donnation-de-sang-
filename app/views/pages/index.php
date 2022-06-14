@@ -26,7 +26,7 @@
             </div>
 
             <div class="second-section animate__animated  animate__fadeInRight">
-                <img src="<?php echo URLROOT; ?>/assets/img/Blood donation.gif" style="width: 485px;" alt="personnes qui donne du sang">
+                <img src="<?php echo URLROOT; ?>/assets/img/Blood donation.gif" style="width: 485px;" alt="personnes qui donne du sang" class="d-none d-xl-block d-xxl-none ">
             </div>
         </div>
 
@@ -36,7 +36,7 @@
         <div class="title-cards d-flex justify-content-center">
             <h3 class="display-3 mb-0">POURQUOI DONNER DU SANG ?</h3>
         </div>
-        <div class=" container  d-flex flex-row mt-5 justify-content-between mb-5">
+        <div class=" cards-index container  d-flex flex-row mt-5 justify-content-between mb-5">
             <div class="first-card text-center shadow-sm p-3 mb-5  rounded " style="width:25%">
                 <svg class="mt-2 mb-2 svg-cards" xmlns="http://www.w3.org/2000/svg" width="97.905" height="77.306" viewBox="0 0 97.905 77.306">
                     <g id="Calque_26" transform="translate(-15.4 -24.895)">
@@ -305,8 +305,6 @@
             </div>
         </div>
     </section>
-
-
     <script src="<?php echo URLROOT; ?>/assets/js/main.js"></script>
     <!-- --------------------------footer---------------------------- -->
     <?php  require APPROOT . '/views/inc/footer.php';  ?>

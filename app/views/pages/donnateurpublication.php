@@ -22,6 +22,7 @@
                                 <div class="card-body">
                                     <h3 class="card-text"><?php echo $value->Title ?></h3>
                                     <p class="card-text"><?php echo $value->Description ?></p>
+                                    <button class="btn btn-sm mt-3 btn-danger" type="button">voir plus</button>
                                 </div>
                             </div>
                         </div>

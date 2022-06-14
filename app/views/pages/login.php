@@ -1,6 +1,8 @@
 <?php require APPROOT . '/views/inc/head.php'; ?>
 
 
+
+
 <body class="index-page bg-white">
 
 

@@ -74,7 +74,7 @@
       }
     }
     public function createUserSession($user) {
-        // session_start();
+        session_start();
       $_SESSION['user_id'] = $user->id;
       $_SESSION['user_Email'] = $user->Email;
       $_SESSION['user_Name'] = $user->name;

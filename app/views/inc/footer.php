@@ -81,6 +81,9 @@
     <script src="<?php echo URLROOT; ?>/assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
     <script src="<?php echo URLROOT; ?>/assets/js/plugins/bootstrap-datepicker.min.js"></script>
     <script src="<?php echo URLROOT; ?>/assets/js/main.js"></script>
+    <script src="<?php echo URLROOT; ?>/assets/js/contactus.js"></script>
+    <script src="<?php echo URLROOT; ?>/assets/js/form.js"></script>
+
 </body>
 
 </html>

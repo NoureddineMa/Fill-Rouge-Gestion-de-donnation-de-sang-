@@ -63,9 +63,9 @@ class Pages extends Controller
     public function editpublications(){
         $this->view('pages/editpublications');
     }
-    public function Home(){
-        $this->view('pages/adminhome');
-    }
+    // public function Home(){
+    //     $this->view('pages/adminhome');
+    // }
 
 }
 ?>

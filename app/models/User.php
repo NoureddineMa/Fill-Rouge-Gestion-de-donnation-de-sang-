@@ -37,24 +37,6 @@
         return false;
       }
     }
-    // public function($Email,$Password){
-
-    //     $this->db->query('SELECT * FROM admin WHERE Email = :Email && Password = :Password');
-    //     $this->db->bind(':Email' ,$Email);
-    //     $this->db->bind(':Password' ,$Password);
-
-    //     $row = $this->db->single();
-    //     if(!empty($row)){
-    //         return $row;
-    //        else {
-    //         return false; 
-
-    //        }
-    //     }
-
-    // }
-
-
 
   }
 

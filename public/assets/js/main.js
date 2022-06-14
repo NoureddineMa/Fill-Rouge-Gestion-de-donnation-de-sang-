@@ -22,7 +22,3 @@ function startCount(el) {
         }
     }, 20 / goal);
 }
-
-
-
-console.log(maher)
