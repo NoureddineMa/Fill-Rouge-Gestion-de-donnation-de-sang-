@@ -19,34 +19,41 @@
         <div class="form-row ">
             <div class="form-group col-md-6 ">
                 <label for="nom ">NOM <span class="text-danger"> *</span> :</label>
-                <input type="text " name="Nom"  class="form-control">
+                <input type="text " name="Nom" id="Nom" class="form-control">
+                <div id="Nom_err"></div>
             </div>
             <div class="form-group col-md-6 ">
                 <label for="prenom ">PRENOM <span class="text-danger"> *</span> :</label>
-                <input type="text "  name="Prenom" id="inputPassword4 " class="form-control" >
+                <input type="text"  name="Prenom" id="Prenom" class="form-control" >
+                <div id="Prenom_err"></div>
+
             </div>
         </div>
         <div class="form-group ">
             <label for="email ">EMAIL <span class="text-danger"> *</span> :</label>
-            <input type="email "  name="Email"  id="inputAddress "class="form-control" >
+            <input type="email "  name="Email"  id="Email"class="form-control" onkeyup="ValidateEmail()" >
+            <div id="Email_err"></div>
+
         </div>
         <div class="form-group ">
             <label for="contexte ">CONTEXTE <span class="text-danger"> *</span> :</label>
-            <input type="text "  name="Contexte" class="form-control " id="inputAddress "class="form-control">
+            <input type="text "  name="Contexte" id="contexte" class="form-control " id="inputAddress "class="form-control">
+            <div id="contexte_err"></div>
+
         </div>
         <div class="form-group ">
             <label for="message ">MESSAGE <span class="text-danger"> *</span> :</label>
-            <textarea type="text "  name="Msg"  style="height:140px;" id="inputAddress "  class="form-control">
-        </textarea>
+            <input type="text"  name="Msg"   style="height:140px;" id="message"  class="form-control" onkeyup="validatemessage()">
+        <div id="message_err"></div>
         </div>
        
-        <button type="submit " name="submit"  class="btn btn-danger ">ENVOYEZ</button>
+        <button type="submit " name="submit" id="submit"  class="btn btn-danger ">ENVOYEZ</button>
     </form>
     </section>
     <!-- end form contact us  -->
 
 
-
+    <script src="<?php echo URLROOT; ?>/assets/js/contactus.js"></script>
     <!-- --------------------------footer---------------------------- -->
     <?php  require APPROOT . '/views/inc/footer.php';  ?>
     <!-- Footer -->

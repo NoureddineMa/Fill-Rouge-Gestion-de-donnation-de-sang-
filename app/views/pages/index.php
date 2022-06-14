@@ -307,7 +307,7 @@
     </section>
 
 
-
+    <script src="<?php echo URLROOT; ?>/assets/js/main.js"></script>
     <!-- --------------------------footer---------------------------- -->
     <?php  require APPROOT . '/views/inc/footer.php';  ?>
     <!-- Footer -->
