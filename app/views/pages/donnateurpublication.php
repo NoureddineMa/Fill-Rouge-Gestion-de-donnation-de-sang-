@@ -9,7 +9,7 @@
 
 
     <h3 class="text-danger text-center py-5">TOUTES LES PUBLICATIONS</h3>
-    <div class="mb-4 d-flex flex-row justify-content-around  flex-wrap ">
+    <div class="mb-4 d-flex flex-column flex-md-row flex-lg-row justify-content-around  flex-wrap ">
                         
     <?php 
         if(!empty($data)){

@@ -9,7 +9,7 @@
 
 
     <section class="textandimage ">
-        <div class="d-flex flex-row  container mb-3 mt-5 ">
+        <div class="d-flex flex-column flex-lg-row container mb-3 mt-5 ">
             <div class="card container shadow mr-4  bg-body rounded mb-5 d-flex flex-column align-items-center">
                 <img src="<?php echo URLROOT; ?>/assets/img/firstcard.png" style="width: 9rem;" alt="Rendez-Vous">
                 <div class="card-body d-flex flex-column justify-content-center">
