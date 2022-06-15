@@ -29,10 +29,10 @@ class Pages extends Controller
     //     $this->view('pages/donnateurpublication');
         
     // }
-    public function patient(){
+    // public function patient(){
 
-        $this->view('pages/patient');
-    }
+    //     $this->view('pages/patient');
+    // }
     public function patientrdv(){
         $this->view('pages/patientrdv');
     }

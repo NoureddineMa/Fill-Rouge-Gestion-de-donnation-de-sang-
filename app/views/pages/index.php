@@ -8,14 +8,16 @@
 
     <section>
         <div class=" container main d-flex flex-row justify-content-between flex-md-row flex-lg-row mb-5  mt-5 ">
-            <div class="first-section container animate__animated  animate__backInLeft" style="margin-top: 80px;">
+            <div class="first-section container animate__animated  animate__backInLeft " style="margin-top: 80px;">
+                
                 <h3 class="display-3 first-title-index " style="line-height: 1;">TOUS </h3>
-                <h3 class="display-3 " style="line-height: 1;">VIVAAAAAAANTS</h3>
+                <h3 class="display-3 " style="line-height: 1;">VIVAAAANTS</h3>
                 <h3 class="display-3 " style="line-height: 1;">POUR LE DON DE SANG !!</h3>
-                <p class="text-black " style="font-size: 75%;
+              
+                <p class="text-black " style="font-size: 70%;
                 font-weight: 300;">Découvrez la nouvelle campagne de sensibilisation au don de sang <br> la mobilisation faiblit et pourtant elle reste essentielle. <br> Moins d'1 personne sur 10 donne du sang alors<br> qu'1 personne sur 7 en aura un jour besoin <br> pour
                     continuer à vivre.</p>
-                <div class="buttons">
+                <div class="buttons text-center">
                   <a href="<?php echo URLROOT; ?>/pages/donnateurrdv">
                     <button type="button " class="btn button-index-r btn-round ">Donner du Sang</button>
                   </a>
@@ -33,11 +35,11 @@
     </section>
 
     <section class="section-cards container  " id="le-pq">
-        <div class="title-cards d-flex justify-content-center">
-            <h3 class="display-3 mb-0">POURQUOI DONNER DU SANG ?</h3>
+        <div class="title-cards d-flex  justify-content-center">
+            <h3 class="display-3 mb-0 text-center">POURQUOI DONNER DU SANG ?</h3>
         </div>
-        <div class=" cards-index container  d-flex flex-row mt-5 justify-content-between mb-5">
-            <div class="first-card text-center shadow-sm p-3 mb-5  rounded " style="width:25%">
+        <div class=" cards-index container  d-flex flex-row  mt-5 justify-content-between mb-5 flex-wrap">
+            <div class="first-card text-center shadow-sm p-3 mb-5  rounded"style="width:50%">
                 <svg class="mt-2 mb-2 svg-cards" xmlns="http://www.w3.org/2000/svg" width="97.905" height="77.306" viewBox="0 0 97.905 77.306">
                     <g id="Calque_26" transform="translate(-15.4 -24.895)">
                       <g id="Groupe_20" data-name="Groupe 20">
@@ -61,7 +63,7 @@
                 <h3 class="heading mb-0 mt-2 mb-3">3 VIES</h3>
                 <p class="text-muted mb-0 mt-2 mb-2 px-1" style="font-size: 11px;">Parce qu'en 30 minutes, vous pouvez sauver 3 vies !</p>
             </div>
-            <div class="first-card text-center shadow-sm p-3 mb-5   rounded" style="width:25%">
+            <div class="first-card text-center shadow-sm p-3 mb-5   rounded"style="width:50%">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-cards" width="75.847" height="111.6" viewBox="0 0 75.847 111.6">
                     <g id="_500000" data-name="500000" transform="translate(-25.653 -8.3)">
                       <g id="Groupe_24" data-name="Groupe 24">
@@ -87,7 +89,7 @@
                 <h3 class="heading mb-0 mt-2 mb-3">500 000 POCHES </h3>
                 <p class="text-muted mb-0 mt-2 mb-2 px-1" style=" font-size: 11px; ">Parc q'il faut près de 500 000 poches par an pour faire face aux besoins.</p>
             </div>
-            <div class="first-card text-center shadow-sm p-3 mb-5   rounded" style="width:25%">
+            <div class="first-card text-center shadow-sm p-3 mb-5   rounded"style="width:50%">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-cards" width="122.053" height="70.4" viewBox="0 0 122.053 70.4">
                     <g id="_1-sur-7" data-name="1-sur-7" transform="translate(-2.647 -28.9)">
                       <g id="Groupe_27" data-name="Groupe 27">
@@ -152,7 +154,7 @@
                 <h3 class="heading mb-0 mt-2 mb-3 ">1 PERSONNE SUR 7 </h3>
                 <p class="text-muted mb-0 mt-2 mb-2 px-1" style="font-size: 11px; ">Parce que moins d'1 personne sur 10 donne du sang alors qu'1 personne sur 7 en aura un jour besoin.</p>
             </div>
-            <div class="first-card text-center shadow-sm p-3 mb-5   rounded " style="width:25%">
+            <div class="first-card text-center shadow-sm p-3 mb-5   rounded" style="width:50%";>
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-cards" width="113.056" height="77.486" viewBox="0 0 113.056 77.486">
                     <g id="Calque_29" transform="translate(-7.341 -26.177)">
                       <g id="Groupe_59" data-name="Groupe 59">
@@ -217,7 +219,7 @@
 
 
     <section class=" container mt-5 three">
-        <div class=" d-flex flex-row justify-content-around">
+        <div class=" d-flex justify-content-around flex-wrap">
             <div class="stat text-center mr-3 nums">
                 <p class=" mt-2 mb-3 font-weight-bold h3 text-danger num" data-goal="700">0</p>
                 <p class="lead text-black  font-weight-bold  ">RENDEZ-VOUS <br> PAR JOUR</p>
@@ -234,11 +236,11 @@
     </section>
 
     <section class="section-cards cards container bg-light rounded mt-5 shadow p-3 mb-5 bg-body rounded mb-5">
-        <div class="title-cards d-flex justify-content-center">
-            <h3 class="display-3 mt-3 text-white">LE DON DU SANG
+        <div class="title-cards text-center d-flex justify-content-center">
+            <h3 class="display-3 mt-3  text-white">LE DON DU SANG
             </h3>
         </div>
-        <div class=" container  d-flex flex-row  justify-content-around  mb-5  ">
+        <div class=" container  d-flex flex-row flex-wrap justify-content-around  mb-5  ">
             <div class="first-card text-center p-3 mb-3 mt-3  rounded ">
                 <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" width="49.5" height="66" viewBox="0 0 49.5 66">
                     <path id="Icon_awesome-notes-medical" data-name="Icon awesome-notes-medical" d="M43.313,8.25H33a8.25,8.25,0,0,0-16.5,0H6.188A6.189,6.189,0,0,0,0,14.438V59.813A6.189,6.189,0,0,0,6.188,66H43.313A6.189,6.189,0,0,0,49.5,59.813V14.438A6.189,6.189,0,0,0,43.313,8.25ZM24.75,5.156A3.094,3.094,0,1,1,21.656,8.25,3.086,3.086,0,0,1,24.75,5.156ZM37.125,44.344a1.034,1.034,0,0,1-1.031,1.031H28.875v7.219a1.034,1.034,0,0,1-1.031,1.031H21.656a1.034,1.034,0,0,1-1.031-1.031V45.375H13.406a1.034,1.034,0,0,1-1.031-1.031V38.156a1.034,1.034,0,0,1,1.031-1.031h7.219V29.906a1.034,1.034,0,0,1,1.031-1.031h6.188a1.034,1.034,0,0,1,1.031,1.031v7.219h7.219a1.034,1.034,0,0,1,1.031,1.031Zm0-24.75a1.034,1.034,0,0,1-1.031,1.031H13.406a1.034,1.034,0,0,1-1.031-1.031V17.531A1.034,1.034,0,0,1,13.406,16.5H36.094a1.034,1.034,0,0,1,1.031,1.031Z" fill="#ed1c24"/>
@@ -283,8 +285,8 @@
 
 
     <section class="textandimage ">
-        <div class="d-flex flex-row  container mb-5 ">
-            <div class="card container shadow mr-4  bg-body rounded mb-5">
+        <div class="d-flex flex-column flex-lg-row  container mb-5 " >
+            <div class="card container shadow mr-4  bg-body rounded mb-5" >
                 <img class="card-img-top" src="<?php echo URLROOT; ?>/assets/img/img.jpg" alt="Card image cap ">
                 <div class="card-body ">
                     <h4 class="card-title ">DONNER DU SANG ? </h4>
@@ -294,13 +296,13 @@
                     <a href="<?php echo URLROOT; ?>/pages/donnateurrdv" class="btn button-d-card ">PRENDRE UN RENDEZ VOUS</a>
                 </div>
             </div>
-            <div class="card container shadow mb-5 bg-body rounded mb-5 ">
+            <div class="card container shadow mb-5 bg-body rounded mb-5"  >
                 <img class="card-img-top " src="<?php echo URLROOT; ?>/assets/img/img2.jpg" alt="Card image cap ">
                 <div class="card-body ">
                     <h4 class="card-title ">VOIR LES DONNEURS DISPONIBLE !
                     </h4>
                     <p class="card-text ">Un don de sang est un processus par lequel un donneur de sang est volontaire pour se voir prélever du sang sera gardé dans une banque du sang avant de transfuser une personne malade lors d'une transfusion sanguine</p>
-                    <a href="<?php echo URLROOT; ?>/pages/patient" class="btn button-d-card ">Voir les Donneurs disponible</a>
+                    <a href="<?php echo URLROOT; ?>/donnateurs/showDonnateursaccepte" class="btn button-d-card ">Voir les Donneurs disponible</a>
                 </div>
             </div>
         </div>

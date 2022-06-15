@@ -35,7 +35,6 @@
     <section class="tableau-patient">
 
         <h3 class=" container  mb-0">LEs DONNATEURS
-            <span class="badge badge-pill badge-danger text-uppercase fs-3" style="font-size: 23px;" ">5 DONNATEURS</span>
                             </h3>
 
                             <div class="container table-responsive py-5 ">

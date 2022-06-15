@@ -113,7 +113,7 @@ submit_patient.addEventListener("click", (e) => {
 
 // regex for name
 function ValidationName() {
-    if (!(/^[a-z A-Z]{5,10}$/).test(Nom_patient.value)) {
+    if (!(/^[a-zA-Z]{5,10}$/).test(Nom_patient.value)) {
         Nom_patient.setAttribute("style", "color:red; border: 1px red solid ;");
         Nom_err_patient.setAttribute("style", "color:red;");
         Nom_err_patient.innerText = "veuillez entrer un nom valid";
