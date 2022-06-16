@@ -21,7 +21,7 @@
                                 <img class="card-img-top" src="<?php echo URLROOT; ?>/assets/img/img.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h3 class="card-text"><?php echo $value->Title ?></h3>
-                                    <p class="card-text"><?php echo $value->Description ?></p>
+                                    <p class="card-text" style="height: 200px;overflow-y:scroll;overflow-y:red;"><?php echo $value->Description ?></p>
                                     <button class="btn btn-sm mt-3 btn-danger" type="button">voir plus</button>
                                 </div>
                             </div>

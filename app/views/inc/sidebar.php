@@ -1,5 +1,6 @@
  <!-- side bar  -->
 
+ 
  <div class="container-fluid overflow-hidden ">
         <div class="row flex-nowrap ">
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 position-fixed top-0 px-0 bg-dark  " style="
@@ -10,7 +11,8 @@
                    
                     <div class="d-flex flex-column align-items-center mt-5">
                         <img src="<?php echo URLROOT; ?>/assets/img/img.jpg " alt="hugenerd " width="70 " height="70 " class="rounded-circle mt-1 ">
-                        <h4 class="text-white mt-3 h6 " style="font-size: 14px; "> <b>MAHER</b></h4>
+                        <h4 class="text-white mt-3 h6 " style="font-size: 14px; "> <b><?php echo $_SESSION['Name'];?>
+</b></h4>
 
                         <p class="text-info mb-5 " style="font-size: 11px; ">Admin</p>
                     </div>

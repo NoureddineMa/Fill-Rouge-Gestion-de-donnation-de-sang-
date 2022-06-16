@@ -19,7 +19,7 @@
         <div class="form-row ">
             <div class="form-group col-md-6 ">
                 <label for="nom ">NOM <span class="text-danger"> *</span> :</label>
-                <input type="text " name="Nom" id="Nom" class="form-control">
+                <input type="text" name="Nom" id="Nom" class="form-control">
                 <div id="Nom_err"></div>
             </div>
             <div class="form-group col-md-6 ">
@@ -31,13 +31,13 @@
         </div>
         <div class="form-group ">
             <label for="email ">EMAIL <span class="text-danger"> *</span> :</label>
-            <input type="email "  name="Email"  id="Email"class="form-control" onkeyup="ValidateEmail()" >
+            <input type="email"  name="Email"  id="Email"class="form-control" onkeyup="ValidateEmail()" >
             <div id="Email_err"></div>
 
         </div>
         <div class="form-group ">
             <label for="contexte ">CONTEXTE <span class="text-danger"> *</span> :</label>
-            <input type="text "  name="Contexte" id="contexte" class="form-control " id="inputAddress "class="form-control">
+            <input type="text"  name="Contexte" id="contexte" class="form-control " id="inputAddress "class="form-control">
             <div id="contexte_err"></div>
 
         </div>

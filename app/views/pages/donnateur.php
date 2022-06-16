@@ -9,7 +9,7 @@
     <?php require APPROOT . '/views/inc/navbar.php'; ?>
     <!-- end nav -->
 
-
+    
     <section class="textandimage ">
         <div class="d-flex flex-column flex-lg-row  container mb-3 mt-5 ">
             <div class="card container shadow mr-4  bg-body rounded mb-5 d-flex flex-column align-items-center">

@@ -1,4 +1,6 @@
-      <!-- include head  -->
+
+
+    <!-- include head  -->
       <?php require APPROOT . '/views/inc/headadmin.php'; ?>
      <!-- end head -->
 
@@ -66,7 +68,7 @@
                                             <td class=""><small><?php echo $value->Sang_donnateur  ?></small></td>
                                             <td><small><?php echo $value->date_de_naissance_d  ?></small></td>
                                             <td  class="text-warning"><small>En Attente</small></td>
-                                            <td>  <a class="badge badge-pill btn-success btn"  href="<?php echo URLROOT; ?>/donnateurs/updatedonnateurs/<?php echo $value->id ?>">Accepter</a> 
+                                            <td class="d-flex">  <a class="badge badge-pill btn-success btn"  href="<?php echo URLROOT; ?>/donnateurs/updatedonnateurs/<?php echo $value->id ?>">Accepter</a> 
                                           <a class="badge badge-pill btn-danger btn " href="<?php echo URLROOT; ?>/donnateurs/supprimerdonnateur/<?php echo $value->id ?>">Refusez</a> </td>
  </td>   
                                         </td>

@@ -5,14 +5,19 @@
             public function __construct(){
 
                 $this->messagesmodel = $this->model('Message');
+                
 
             }
 
-          public function adminmsg(){
-            $data = $this->messagesmodel->getmessages();
+            public function adminmsg(){
+              if(isset($_SESSION['id'])){
+              $data = $this->messagesmodel->getmessages();
 
-          $this->view('pages/adminmsg',$data);
-          }
+            $this->view('pages/adminmsg',$data);
+              }else{
+                redirect('pages/index');
+              }
+            }
 
 
                 public function Addmsg() {

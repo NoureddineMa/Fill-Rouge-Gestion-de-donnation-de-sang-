@@ -15,7 +15,7 @@
         <div class="form-row ">
             <div class="form-group col-md-6 ">
                 <label for="inputEmail4 ">NOM <span class="text-danger"> *</span> :</label>
-                <input type="email " class="form-control "name="Nom_donnateur" id="Nom_donnateurs" placeholder="Veuillez Entrer Votre Nom  ">
+                <input type="texte" class="form-control "name="Nom_donnateur" id="Nom_donnateurs" placeholder="Veuillez Entrer Votre Nom  ">
                 <div id="Nom_error"></div>
             </div>
             <div class="form-group col-md-6 ">
@@ -27,7 +27,7 @@
         <div class="form-row">
         <div class="form-group col-md-6 ">
             <label for="inputAddress ">ADRESSE <span class="text-danger"> *</span> :</label>
-            <input type="text " class="form-control " name="Adresse_donnateur" id="Adresse_donnateurs" placeholder="Veuillez Entrer Votre Adresse  ">
+            <input type="text" class="form-control " name="Adresse_donnateur" id="Adresse_donnateurs" placeholder="Veuillez Entrer Votre Adresse  ">
             <div id="Adresse_error"></div>
         </div>
         <div class="form-group col-md-6 ">
@@ -38,16 +38,16 @@
 </div>
         <div class="form-group ">
             <label for="inputAddress2 ">EMAIL <span class="text-danger"> *</span> :</label>
-            <input type="email " class="form-control " name="Email_donnateur" id="Email_donnateurs" placeholder="Veuillez Entrer Votre Mail ">
+            <input type="email" class="form-control " name="Email_donnateur" id="Email_donnateurs" placeholder="Veuillez Entrer Votre Mail ">
             <div id="Email_error"></div>
         </div>
         <div class="form-group ">
             <label for="inputAddress2 ">NUMERO DE TELEPHONE <span class="text-danger"> *</span> :</label>
-            <input type="number " class="form-control " name="Phone_donnateur" id="Num_donnateurs" placeholder="Veuillez Entrer Votre Numero de telephone ">
+            <input type="number" class="form-control " name="Phone_donnateur" id="Num_donnateurs" placeholder="Veuillez Entrer Votre Numero de telephone ">
             <div id="Num_error"></div>
         </div>
             <div class="form-group">
-            <label for="sang ">NATURE DE SANG <span class="text-danger"> *</span> :</label>
+            <label for="sang">NATURE DE SANG <span class="text-danger"> *</span> :</label>
             <select class="form-control" name="sang" required="required">
             <option value="" disabled selected> --- Groupe Sanguin --- </option>
             <option value="0-">O-</option>

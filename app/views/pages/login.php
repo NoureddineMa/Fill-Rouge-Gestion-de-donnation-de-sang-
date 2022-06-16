@@ -11,6 +11,8 @@
         <h1 class="text-dark"> <small>ESPACE ADMIN<i></small></h1>
     </div>
 
+   
+
     <section class="login d-flex flex-row justify-content-center align-items-center justify-content-around ">
         <div class="img-login">
             <img src="<?php echo URLROOT; ?>/assets/img/Admin-rafiki.png" class="mt-2" alt="Admin Picture" style="width: 35VW;">
@@ -26,6 +28,7 @@
                       value="<?php if(isset($data['Email'])) { echo $data['Email']; } ?>">
                     <span class=" text-dark"><small><?php if(isset($data['Email_err'])) { echo $data['Email_err']; } ?></small></span>
                     <span id="Email"></span>
+
                 </div>
                 <div class="form-group mb-2">
                     <label for="exampleInputPassword1" class="text-white">Mot de Passe </label>

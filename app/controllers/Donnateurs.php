@@ -5,15 +5,20 @@
             public function __construct(){
 
                 $this->donnateurmodel = $this->model('Donnateur');
+                
 
             }
 
           public function showDonnateurs(){
+            if(isset($_SESSION['id'])){
             $data = [];
             $data["accepted"] = $this->donnateurmodel->getdonnateursaccepter();
             $data["not-accepted"] = $this->donnateurmodel->getdonnateursNonaccepte();
 
             $this->view('pages/admindonnateurs',$data);
+            }else{
+              redirect('pages/index');
+            }
 
           }            
 
@@ -47,7 +52,6 @@
 
                //  function delete 
         public function supprimerdonnateur($id){
-
           $this->donnateurmodel->deletedonnateur($id);
           redirect('donnateurs/showdonnateurs'); 
           }

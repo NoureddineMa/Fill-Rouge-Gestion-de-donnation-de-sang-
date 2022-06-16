@@ -1,128 +1,150 @@
-                         :root {
-                            --Rouge: #ED1C24;
-                        }
-                        
-                        * {
-                            font-family: 'Poppins', sans-serif;
-                        }
-                        
-                        @import url('ttps://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-                        .logo-navbar {
-                            width: 90px;
-                        }
-                        
-                        .first-title-index {
-                            color: var(--Rouge);
-                        }
-                        
-                        .button-index-r {
-                            background-color: var(--Rouge);
-                            color: white;
-                        }
-                        
-                        .button-index-b {
-                            background-color: white !important;
-                            border: 1px solid var(--Rouge);
-                            color: var(--Rouge);
-                        }
-                        
-                        .nav-link {
-                            color: black;
-                            padding: 2px !important;
-                        }
-                        
-                        .nav-link-hover:hover {
-                            /* text-decoration: underline var(--Rouge);
+                                 :root {
+                                    --Rouge: #ED1C24;
+                                }
+                                
+                                * {
+                                    font-family: 'Poppins', sans-serif;
+                                }
+                                
+                                @import url('ttps://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+                                .logo-navbar {
+                                    width: 90px;
+                                }
+                                
+                                .first-title-index {
+                                    color: var(--Rouge);
+                                }
+                                
+                                .button-index-r {
+                                    background-color: var(--Rouge);
+                                    color: white;
+                                }
+                                
+                                .button-index-b {
+                                    background-color: white !important;
+                                    border: 1px solid var(--Rouge);
+                                    color: var(--Rouge);
+                                }
+                                
+                                .nav-link {
+                                    color: black;
+                                    padding: 2px !important;
+                                }
+                                
+                                .nav-link-hover:hover {
+                                    /* text-decoration: underline var(--Rouge);
 color: var(--Rouge); */
-                            color: white;
-                            background-color: var(--Rouge);
-                        }
-                        /* .first-card {
+                                    color: white;
+                                    background-color: var(--Rouge);
+                                }
+                                /* .first-card {
 width: 23%;
 height: 267px;
 border-radius: 5px;
 } */
-                        
-                        .card-back {
-                            background-color: rgba(246, 227, 227, 0.15);
-                        }
-                        
-                        .svg-cards {
-                            width: 60px;
-                        }
-                        
-                        .bg-color {
-                            background-color: #F6E3E3;
-                        }
-                        
-                        .cards {
-                            border: 1px var(--Rouge)solid;
-                        }
-                        
-                        .button-d-card {
-                            background-color: var(--Rouge);
-                            color: white;
-                        }
-                        
-                        .footer {
-                            height: 400px;
-                            background-color: black;
-                        }
-                        
-                        .footer-r {
-                            height: 40px;
-                            background-color: var(--Rouge);
-                        }
-                        
-                        .first-card {
-                            margin: 0px !important;
-                        }
-                        
-                        .card {
-                            padding: 0px !important;
-                        }
-                        
-                        .navbar-fixed-top {
-                            top: 0;
-                            position: sticky;
-                            z-index: 1;
-                        }
-                        /* Patient page */
-                        
-                        .buttons-align {
-                            margin: 0 auto;
-                        }
-                        
-                        .overflow-hidden {
-                            overflow: hidden;
-                        }
-                        
-                        .position {
-                            position: relative;
-                        }
-                        
-                        .position-a {
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                        }
-                        
-                        .position input {
-                            padding-right: 50px;
-                        }
-                        
-                        .first-card {
-                            margin-top: 5% !important;
-                        }
-                        
-                        .side-hover:hover {
-                            background-color: red;
-                        }
-                        
-                        .inputfield {
-                            height: 50px;
-                        }
-                        
-                        .pCard::-webkit-scrollbar {
-                            display: none;
-                        }
+                                
+                                .card-back {
+                                    background-color: rgba(246, 227, 227, 0.15);
+                                }
+                                
+                                .svg-cards {
+                                    width: 60px;
+                                }
+                                
+                                .bg-color {
+                                    background-color: #F6E3E3;
+                                }
+                                
+                                .cards {
+                                    border: 1px var(--Rouge)solid;
+                                }
+                                
+                                .button-d-card {
+                                    background-color: var(--Rouge);
+                                    color: white;
+                                }
+                                
+                                .footer {
+                                    height: 400px;
+                                    background-color: black;
+                                }
+                                
+                                .footer-r {
+                                    height: 40px;
+                                    background-color: var(--Rouge);
+                                }
+                                
+                                .first-card {
+                                    margin: 0px !important;
+                                }
+                                
+                                .card {
+                                    padding: 0px !important;
+                                }
+                                
+                                .navbar-fixed-top {
+                                    top: 0;
+                                    position: sticky;
+                                    z-index: 1;
+                                }
+                                /* Patient page */
+                                
+                                .buttons-align {
+                                    margin: 0 auto;
+                                }
+                                
+                                .overflow-hidden {
+                                    overflow: hidden;
+                                }
+                                
+                                .position {
+                                    position: relative;
+                                }
+                                
+                                .position-a {
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+                                
+                                .position input {
+                                    padding-right: 50px;
+                                }
+                                
+                                .first-card {
+                                    margin-top: 5% !important;
+                                }
+                                
+                                .side-hover:hover {
+                                    background-color: red;
+                                }
+                                
+                                .inputfield {
+                                    height: 50px;
+                                }
+                                
+                                .pCard::-webkit-scrollbar {
+                                    display: none;
+                                }
+                                
+                                html {
+                                    font-size: 1rem;
+                                }
+                                
+                                @include media-breakpoint-up(sm) {
+                                    html {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                                
+                                @include media-breakpoint-up(md) {
+                                    html {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                                
+                                @include media-breakpoint-up(lg) {
+                                    html {
+                                        font-size: 1.6rem;
+                                    }
+                                }

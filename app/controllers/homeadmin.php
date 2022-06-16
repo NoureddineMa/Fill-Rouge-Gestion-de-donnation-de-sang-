@@ -6,11 +6,13 @@
             $this->messagesmodel = $this->model('Message');
             $this->patientmodel = $this->model('Patient');
             $this->pubmodel = $this->model('Pub');
+            
 
 
             
             }        
         public function showStatistiques(){
+            if(isset($_SESSION['id'])){
             $data = [
                 "donnateuracceptercount"=>$this->donnateurmodel->getDonnateurAccepterNumber(),
                 "donnateurenattentecount"=>$this->donnateurmodel->getDonnateurwaiting(),
@@ -19,8 +21,10 @@
                 "Publicationscount"=>$this->pubmodel->getPubscount(),
             ];
             $this->view('pages/adminhome',$data);
-
-
+        }else{
+                    redirect('pages/index');
+            }
         }
+        
     }
 ?>

@@ -1,4 +1,5 @@
-     <!-- include head  -->
+
+    <!-- include head  -->
      <?php require APPROOT . '/views/inc/headadmin.php'; ?>
      <!-- end head -->
 

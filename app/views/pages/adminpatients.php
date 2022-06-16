@@ -1,3 +1,4 @@
+
 <?php  require APPROOT . '/views/inc/headadmin.php';  ?>
 
 <body class="index-page">

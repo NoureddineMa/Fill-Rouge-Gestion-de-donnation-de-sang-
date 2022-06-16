@@ -4,14 +4,21 @@
     class Pubs extends Controller {
 
         public function __construct(){
+          
             $this->pubmodel = $this->model('Pub');
+            
+            
         }
 
         // function affichage patients for admin
 
         public function showpubs(){
+          if(isset($_SESSION['id'])){
             $data = $this->pubmodel->getpubs();
             $this->view('pages/adminpublications',$data);
+          }else{
+            redirect('pages/index');
+          }
           }
 
          // end function affichage  
@@ -21,6 +28,7 @@
 
         public function showpubsUser(){
             $data = $this->pubmodel->getpubs();
+
             $this->view('pages/donnateurpublication',$data);
           }
 

@@ -9,8 +9,12 @@
             }
 
           public function showpatients(){
+            if(isset($_SESSION['id'])){
             $data = $this->patientmodel->getpatients();
             $this->view('pages/adminpatients',$data);
+            }else{
+              redirect('pages/index');
+            }
           }
 
 
