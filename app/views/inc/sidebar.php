@@ -9,7 +9,7 @@
 
                 <div class=" d-flex flex-column justify-content-around align-items-center px-3 pt-2 text-white ps-5 ">
                    
-                    <div class="d-flex flex-column align-items-center mt-5">
+                    <div class="d-flex flex-column align-items-center ">
                         <img src="<?php echo URLROOT; ?>/assets/img/img.jpg " alt="hugenerd " width="70 " height="70 " class="rounded-circle mt-1 ">
                         <h4 class="text-white mt-3 h6 " style="font-size: 14px; "> <b><?php echo $_SESSION['Name'];?>
 </b></h4>
@@ -18,16 +18,16 @@
                     </div>
 
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start  " id="menu ">
-                    <li class="nav-item mb-3 side-hover " style="font-size: 16px; ">
-                            <a href="<?php echo URLROOT;?>./homeadmin/showStatistiques" class="btn align-middle  ">
-                            <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-arrow-up-right-circle-fill text-danger " viewBox="0 0 16 16 ">
-                                    <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z "/>
-                                  </svg>
+                    <li class="nav-item mb-3 side-hover   " style="font-size: 16px; ">
+                            <a href="<?php echo URLROOT;?>./homeadmin/showStatistiques" class="btn align-middle  " style="">
+                            <img src="<?php echo URLROOT; ?>/assets/img/home.png " alt="homeicone" style="
+    width: 20px;
+">
                                 <h2 class="ms-1 d-none d-sm-inline mt-4 text-white " style="font-size:10px; ">Home</h2>
                             </a>
                         </li>
                         <li class="nav-item mb-3 side-hover " style="font-size: 16px; ">
-                            <a href="<?php echo URLROOT;?>./donnateurs/showDonnateurs" class="btn align-middle  ">
+                            <a href="<?php echo URLROOT;?>./donnateurs/showDonnateurs" class="btn align-middle  " style="">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-arrow-up-right-circle-fill text-danger " viewBox="0 0 16 16 ">
                                     <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z "/>
                                   </svg>
@@ -65,7 +65,7 @@
                             </a>
 
                         </li>
-                        <li class="mt-5 side-hover">
+                        <li class=" side-hover">
                             <a href="<?php echo URLROOT;?>./users/logout" data-bs-toggle="collapse " class="btn text-dark ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-box-arrow-right text-danger " viewBox="0 0 16 16 ">
                                     <path fill-rule="evenodd " d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5

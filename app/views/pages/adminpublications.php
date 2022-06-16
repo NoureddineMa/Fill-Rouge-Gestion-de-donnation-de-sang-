@@ -25,7 +25,7 @@
                 <main class="container-fluid mt-5" style="position: relative;
                 left: 50px;">
                     <div class="d-flex flex-column text-center justify-content-center">
-                        <h3 class="display-4 mb-0 ">VOILA LA PAGE DES PUBLICATIONS</h3>
+                        <h3 class=" mb-0 " style="font-size:1rem;">VOILA LA PAGE DES PUBLICATIONS</h3>
                         <p>Pour ajouter des publications veuillez cliquez sur ce button</p>
                         <div class="col-md-4 d-flex mx-auto " style="left:122px">
                             <button type="button" class="btn  text-white bg-danger d-flex   mb-3" data-toggle="modal"  data-target="#modal-form">ajouter</button>
@@ -54,30 +54,36 @@
                                                                 <div class="input-group-prepend">
 
                                                                 </div>
-                                                                <input class="form-control" name="Image" type="file">
+                                                                <input class="form-control" name="Image" id="Image" type="file">
                                                             </div>
+                                                            <div id="Image_error"></div>
+
                                                         </div>
 
                                                         <div class="form-group">
                                                             <div class="input-group input-group-alternative">
                                                                 <div class="input-group-prepend">
                                                                 </div>
-                                                                <input class="form-control" name="Title"  placeholder="title" type="text">
+                                                                <input class="form-control" name="Title" id="Title"  placeholder="title" type="text">
                                                             </div>
+                                                            <div id="Title_error"></div>
+
                                                         </div>
 
                                                         <div class="form-group">
                                                             <div class="input-group input-group-alternative">
                                                                 <div class="input-group-prepend">
                                                                 </div>
-                                                                <input class="form-control" name="Description" style="padding:40px 0;" placeholder="Contenu" type="text">
+                                                                <input class="form-control" name="Description" id="Description"  style="padding:40px 0;" placeholder="Contenu" type="text">
                                                             </div>
                                                         </div>
+                                                        <div id="Description_error"></div>
+
 
 
 
                                                         <div class="text-center">
-                                                            <button type="submit" name="submit" class="btn btn-danger  my-4">Ajouter</button>
+                                                            <button type="submit" id="submit" name="submit" class="btn btn-danger  my-4">Ajouter</button>
                                                         </div>
                                                     </form>
 
@@ -147,6 +153,8 @@
                 <script src="<?php echo URLROOT; ?>./assets/js/plugins/moment.min.js"></script>
                 <script src="<?php echo URLROOT; ?>./assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
                 <script src="<?php echo URLROOT; ?>./assets/js/plugins/bootstrap-datepicker.min.js"></script>
+                <script src="<?php echo URLROOT; ?>./assets/js/addpub.js"></script>
+
 
 </body>
 
