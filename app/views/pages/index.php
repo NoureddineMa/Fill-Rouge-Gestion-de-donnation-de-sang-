@@ -39,7 +39,7 @@
             <h3 class="display-3 mb-0 text-center">POURQUOI DONNER DU SANG ?</h3>
         </div>
         <div class=" cards-index container  d-flex flex-column  flex-lg-row  mt-5 justify-content-between mb-5">
-            <div class="first-card text-center shadow-sm p-3 mb-5  rounded">
+            <div class="first-card text-center shadow-sm p-3 mb-5  rounded test-hv">
                 <svg class="mt-2 mb-2 svg-cards" xmlns="http://www.w3.org/2000/svg" width="97.905" height="77.306" viewBox="0 0 97.905 77.306">
                     <g id="Calque_26" transform="translate(-15.4 -24.895)">
                       <g id="Groupe_20" data-name="Groupe 20">
@@ -63,7 +63,7 @@
                 <h3 class="heading mb-0 mt-2 mb-3">3 VIES</h3>
                 <p class="text-muted mb-0 mt-2 mb-2 px-1" style="font-size: 11px;">Parce qu'en 30 minutes, vous pouvez sauver 3 vies !</p>
             </div>
-            <div class="first-card text-center shadow-sm p-3 mb-5   rounded">
+            <div class="first-card text-center shadow-sm p-3 mb-5   rounded test-hv">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-cards" width="75.847" height="111.6" viewBox="0 0 75.847 111.6">
                     <g id="_500000" data-name="500000" transform="translate(-25.653 -8.3)">
                       <g id="Groupe_24" data-name="Groupe 24">
@@ -89,7 +89,7 @@
                 <h3 class="heading mb-0 mt-2 mb-3">500 000 POCHES </h3>
                 <p class="text-muted mb-0 mt-2 mb-2 px-1" style=" font-size: 11px; ">Parc q'il faut près de 500 000 poches par an pour faire face aux besoins.</p>
             </div>
-            <div class="first-card text-center shadow-sm p-3 mb-5   rounded">
+            <div class="first-card text-center shadow-sm p-3 mb-5   rounded test-hv">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-cards" width="122.053" height="70.4" viewBox="0 0 122.053 70.4">
                     <g id="_1-sur-7" data-name="1-sur-7" transform="translate(-2.647 -28.9)">
                       <g id="Groupe_27" data-name="Groupe 27">
@@ -154,7 +154,7 @@
                 <h3 class="heading mb-0 mt-2 mb-3 ">1 PERSONNE SUR 7 </h3>
                 <p class="text-muted mb-0 mt-2 mb-2 px-1" style="font-size: 11px; ">Parce que moins d'1 personne sur 10 donne du sang alors qu'1 personne sur 7 en aura un jour besoin.</p>
             </div>
-            <div class="first-card text-center shadow-sm p-3 mb-5   rounded" ;>
+            <div class="first-card text-center shadow-sm p-3 mb-5   rounded test-hv" ;>
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-cards" width="113.056" height="77.486" viewBox="0 0 113.056 77.486">
                     <g id="Calque_29" transform="translate(-7.341 -26.177)">
                       <g id="Groupe_59" data-name="Groupe 59">

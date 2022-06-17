@@ -25,7 +25,7 @@
                 <main class="container-fluid mt-5" style="position: relative;
                 left: 50px;">
                     <div class="d-flex flex-column text-center justify-content-center">
-                        <h3 class=" mb-0 " style="font-size:1rem;">VOILA LA PAGE DES PUBLICATIONS</h3>
+                        <h3 class="display-4 mb-0" >VOILA LA PAGE DES PUBLICATIONS</h3>
                         <p>Pour ajouter des publications veuillez cliquez sur ce button</p>
                         <div class="col-md-4 d-flex mx-auto " style="left:122px">
                             <button type="button" class="btn  text-white bg-danger d-flex   mb-3" data-toggle="modal"  data-target="#modal-form">ajouter</button>
@@ -46,7 +46,7 @@
 
                                                     <!-- form -->
 
-                                                    <form role="form" action="<?php echo URLROOT; ?>/Pubs/ajouterpub" method="POST">
+                                                    <form role="form" action="<?php echo URLROOT; ?>/Pubs/ajouterpub" method="POST" enctype="multipart/form-data">
 
 
                                                         <div class="form-group mb-3">
@@ -117,10 +117,10 @@
 </svg>
                                     </a>
                                 </div>
-                                <img class="card-img-top" src="<?php echo $value->Image ?>" alt="Card image cap">
+                                <img class="card-img-top" src="http://localhost/Fill-Rouge-Gestion-de-donnation-de-sang-/public/uploads/<?php echo $value->Image ?>" alt="Card image cap" style="height:200px;">
                                 <div class="card-body">
                                     <h3 class="card-text"><?php echo $value->Title ?></h3>
-                                    <p class="pCard card-text" style="height: 200px;overflow-y:scroll;overflow-y:red;"><?php echo $value->Description ?></p>
+                                    <p class="pCard card-text scroller" style="height: 200px;overflow-y:scroll;"><?php echo $value->Description ?></p>
                                     <button class="btn btn-sm mt-3 btn-danger" type="button">Voir plus</button>
                                 </div>
                             </div>

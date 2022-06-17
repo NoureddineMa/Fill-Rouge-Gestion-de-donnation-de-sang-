@@ -48,7 +48,7 @@
         </div>
             <div class="form-group">
             <label for="sang">NATURE DE SANG <span class="text-danger"> *</span> :</label>
-            <select class="form-control" name="sang" required="required">
+            <select class="form-control" name="Sang_donnateur" required="required">
             <option value="" disabled selected> --- Groupe Sanguin --- </option>
             <option value="0-">O-</option>
             <option value="0+">O+</option>

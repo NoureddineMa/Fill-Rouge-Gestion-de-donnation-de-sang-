@@ -22,7 +22,7 @@
                     <section class="tableau-patient mt-5">
                         
                     <div class="ml-5">
-        <h3 class="   mb-0">LEs DEMANDES DE  DONNATION
+        <h3 class="display-4 mb-0">LEs DEMANDES DE  DONNATION
                             </h3>
                             <p class="">Voici la liste des Gens Qui veulent nous rejoindre pour etre parmis les donnataurs !                                 
                             <p>
@@ -101,8 +101,7 @@
 
     <section class="tableau-patient mt-5">
 <div class="ml-5">
-<h3 class="   mb-0">LEs  DONNATEURS
-                    </h3>
+<h3 class="display-4 mb-0">LEs  DONNATEURS</h3>
                     <p class="">Voici la liste des donnataurs !                                 
                     <p>
                     </div>

@@ -16,7 +16,6 @@
          <section class="section-cards mt-5 " style="position: relative; left: 30px; " id="le-pq ">
              <div class="title-cards d-flex justify-content-center ">
                  <h3 class="display-4 mb-0 ">VOICI LES MESSAGES RECU</h3>
-
              </div>
              <div class="container table-responsive py-5 ">
                  <!-- table table-borderless table-striped  shadow p-3 mb--3 bg-body rounded -->
@@ -36,7 +35,7 @@
                          <?php if(!empty($data)){ ?>  
                          <?php foreach ( $data as $value) : ?>
                          <tr>
-                        <td class="font-weight-light"> <small><?php echo $value->Nom ?></small></td>
+                        <td class="font-weight-light"><small><?php echo $value->Nom ?></small></td>
                         <td><small><?php echo $value->Prenom ?></small></td>
                         <td ><small><?php echo $value->Email ?></small></td>
                         <td><small><?php echo $value->Contexte ?></small></td>

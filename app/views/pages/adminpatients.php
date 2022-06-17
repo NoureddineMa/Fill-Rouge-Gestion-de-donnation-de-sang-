@@ -17,7 +17,7 @@
                 <section class="tableau-patient " style="position: relative;
                 ">
                     <div class="title-cards d-flex justify-content-center">
-                    <h3 class=" display-4 mb-0 ">VOICI LA LISTE DES PATIENTS</h3>
+                    <h3 class="display-4 mb-0">VOICI LA LISTE DES PATIENTS</h3>
 
                 </div>
                 <hr class="bg-danger mb-3 w-50 ">

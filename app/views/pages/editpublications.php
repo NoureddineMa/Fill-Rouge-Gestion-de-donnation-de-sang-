@@ -18,7 +18,7 @@
         
             <form role="form" class="w-75" style="    left: 149px;
     position: relative;
-    margin-top: 50px;"  method="POST">
+    margin-top: 50px;"  method="POST" enctype="multipart/form-data">
 
 <div class="form-group mb-3">
     <div class="input-group input-group-alternative">
