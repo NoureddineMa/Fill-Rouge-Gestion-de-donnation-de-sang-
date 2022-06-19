@@ -13,12 +13,12 @@
                         <h4 class="text-white mt-3 h6 " style="font-size: 14px; "> <b><?php echo $_SESSION['Name'];?>
 </b></h4>
 
-                        <p class="text-info mb-5 " style="font-size: 10px; ">Admin</p>
+                        <p class="text-danger mb-5 " style="font-size: 10px; ">Admin</p>
                     </div>
 
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start  " id="menu ">
                     <li class="nav-item mb-4 side-hover" style="font-size: 16px; ">
-                            <a href="<?php echo URLROOT;?>./homeadmin/showStatistiques" class="btn align-middle  ">
+                            <a href="<?php echo URLROOT;?>./Admins/showStatistiques" class="btn align-middle  ">
                             <img src="<?php echo URLROOT; ?>/assets/img/home.png " alt="homeicone" >
                                 <h2 class="ms-1 d-none d-sm-inline mt-4 text-white " style="font-size:10px; ">Home</h2>
                             </a>
@@ -63,7 +63,7 @@
 
                         </li>
                         <li class=" side-hover mt-2">
-                            <a href="<?php echo URLROOT;?>./users/logout" data-bs-toggle="collapse " class="btn text-dark ">
+                            <a href="<?php echo URLROOT;?>./Admins/logout" data-bs-toggle="collapse " class="btn text-dark ">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-box-arrow-right text-danger " viewBox="0 0 16 16 ">
                                     <path fill-rule="evenodd " d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5
                 0 0 0-1 0v2z "/>

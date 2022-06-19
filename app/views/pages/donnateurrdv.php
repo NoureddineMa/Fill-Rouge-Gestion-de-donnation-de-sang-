@@ -10,7 +10,7 @@
 
 
     <form class="container shadow p-3 mb-5 bg-body rounded mt-5 " action="<?php echo URLROOT; ?>/donnateurs/ajouterDonnateurs" method="POST">
-        <h3 class=" text-center  font-weight-bold mb-5 mt-3">RENDEZ VOUS (DONNATEUR)
+        <h3 class=" text-center  font-weight-bold mb-5 mt-3">RENDEZ VOUS 
         </h3>
         <div class="form-row ">
             <div class="form-group col-md-6 ">
@@ -43,7 +43,7 @@
         </div>
         <div class="form-group ">
             <label for="inputAddress2 ">NUMERO DE TELEPHONE <span class="text-danger"> *</span> :</label>
-            <input type="number" class="form-control " name="Phone_donnateur" id="Num_donnateurs" placeholder="Veuillez Entrer Votre Numero de telephone ">
+            <input type="tel" class="form-control " name="Phone_donnateur" id="Num_donnateurs" placeholder="Veuillez Entrer Votre Numero de telephone ">
             <div id="Num_error"></div>
         </div>
             <div class="form-group">

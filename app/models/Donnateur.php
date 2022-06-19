@@ -93,10 +93,7 @@ class Donnateur {
           return false;
       }
      }
-
    // End requette Delete !
-
-
   //  COUNT NUMBERS OF DONNATEURS  :
   public function getDonnateurAccepterNumber(){
     $this->db->query("SELECT COUNT(*) as count FROM donnateur WHERE status='Accepter'");

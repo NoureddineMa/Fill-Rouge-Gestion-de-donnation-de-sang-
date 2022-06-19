@@ -101,7 +101,7 @@
 
     <section class="tableau-patient mt-5">
 <div class="ml-5">
-<h3 class="display-4 mb-0">LEs  DONNATEURS</h3>
+<h3 class="display-4 mb-0">LEs  DONATEURS</h3>
                     <p class="">Voici la liste des donnataurs !                                 
                     <p>
                     </div>

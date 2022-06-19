@@ -45,7 +45,6 @@
 <script src="<?php echo URLROOT; ?>/public/assets/js/plugins/moment.min.js "></script>
 <script src="<?php echo URLROOT; ?>/public/assets/js/plugins/datetimepicker.js " type="text/javascript "></script>
 <script src="<?php echo URLROOT; ?>/public/assets/js/plugins/bootstrap-datepicker.min.js "></script>
-<script src="<?php echo URLROOT; ?>/public/assets/js/main.js "></script>
 </body>
 
 </html>

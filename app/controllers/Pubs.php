@@ -17,7 +17,7 @@
             $data = $this->pubmodel->getpubs();
             $this->view('pages/adminpublications',$data);
           }else{
-            redirect('pages/index');
+            redirect('pages/error');
           }
           }
 

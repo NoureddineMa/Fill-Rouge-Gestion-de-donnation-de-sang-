@@ -17,7 +17,7 @@
 
             $this->view('pages/admindonnateurs',$data);
             }else{
-              redirect('pages/index');
+              redirect('pages/error');
             }
 
           }            

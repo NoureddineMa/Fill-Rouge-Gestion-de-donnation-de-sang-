@@ -10,12 +10,12 @@
 
 
     <form class="container shadow p-3 mb-5 bg-body rounded mt-5 "action="<?php echo URLROOT; ?>/Patients/ajouterpatient" method="POST">
-        <h3 class=" text-center font-weight-bold mb-5 mt-3">RENDEZ VOUS (PATIENT)
+        <h3 class=" text-center font-weight-bold mb-5 mt-3">RENDEZ VOUS 
         </h3>
         <div class="form-row ">
             <div class="form-group col-md-6 ">
                 <label for="inputEmail4 ">NOM <span class="text-danger"> *</span> :</label>
-                <input type="text" name="Nom_patient" class="form-control " id="Nom_patient" placeholder="Veuillez Entrer Votre Nom " onkeyup="ValidationName()">
+                <input type="text" name="Nom_patient" class="form-control " id="Nom_patient" placeholder="Veuillez Entrer Votre Nom ">
                 <div id="Nom_err_patient"></div>
             </div>
             <div class="form-group col-md-6 ">
@@ -44,7 +44,7 @@
         </div>
         <div class="form-group ">
             <label for="inputAddress2 ">NUMERO DE TELEPHONE <span class="text-danger"> *</span> :</label>
-            <input type="number" name="Phone_patient" class="form-control " id="Num_patient" placeholder="Veuillez Entrer Votre Numero de telephone ">
+            <input type="tel" name="Phone_patient" class="form-control " id="Num_patient" placeholder="Veuillez Entrer Votre Numero de telephone ">
             <div id="Num_err_patient"></div>
         </div>
             <div class="form-group">

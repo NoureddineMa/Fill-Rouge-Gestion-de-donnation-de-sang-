@@ -1,7 +1,14 @@
 <?php
-  class Users extends Controller {
+  class Admins extends Controller {
     public function __construct(){
       $this->userModel = $this->model('User');
+
+        //
+      $this->donnateurmodel = $this->model('Donnateur');
+      $this->messagesmodel = $this->model('Message');
+      $this->patientmodel = $this->model('Patient');
+      $this->pubmodel = $this->model('Pub');
+      //
     }
 
     public function login() {
@@ -73,7 +80,7 @@
       $_SESSION['id'] = $user->id;
       $_SESSION['Email'] = $user->Email;
       $_SESSION['Name'] = $user->Name;
-      redirect('homeadmin/showStatistiques');
+      redirect('Admins/showStatistiques');
     }
 
     public function logout(){
@@ -86,10 +93,28 @@
 
     public function isLoggedIn(){
       if(isset($_SESSION['id'])){
-        redirect('homeadmin/showStatistiques');
+        redirect('Admins/showStatistiques');
       } else {
-        redirect('pages/index');
+        redirect('pages/error');
       }
     } 
 
+    public function showStatistiques(){
+      if(isset($_SESSION['id'])){
+      $data = [
+          "donnateuracceptercount"=>$this->donnateurmodel->getDonnateurAccepterNumber(),
+          "donnateurenattentecount"=>$this->donnateurmodel->getDonnateurwaiting(),
+          "messagescountcount"=>$this->messagesmodel->getMessagescount(),
+          "Patientcount"=>$this->patientmodel->getPatientscount(),
+          "Publicationscount"=>$this->pubmodel->getPubscount(),
+      ];
+      $this->view('pages/adminhome',$data);
+  }else{
+              redirect('pages/error');
+      }
   }
+  
+}
+
+
+

@@ -18,7 +18,7 @@
             <img src="<?php echo URLROOT; ?>/assets/img/Admin-rafiki.png" class="mt-2" alt="Admin Picture" style="width: 35VW;">
         </div>
         <div class="form-login  px-5 py-5 mr-5  rounded w-50" style="background-color: var(--Rouge);">
-            <form method="POST" action="<?php echo URLROOT; ?>/users/login" >
+            <form method="POST" action="<?php echo URLROOT; ?>/Admins/login" >
             <?php flash('register_success'); ?>
                 <h3 class="text-center text-white font-weight-bold mb-3">LOGIN</h3>
                 <div class="form-group">

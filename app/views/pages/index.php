@@ -214,22 +214,21 @@
             </div>
         </div>
     </section>
-    <img src="<?php echo URLROOT; ?>/assets/img/logo.png" class="mx-auto d-block " style="width: 142px;" alt="logo">
 
 
 
     <section class=" container mt-5 three">
         <div class=" d-flex justify-content-around flex-wrap">
             <div class="stat text-center mr-3 nums">
-                <p class=" mt-2 mb-3 font-weight-bold h3 text-danger num" data-goal="700">0</p>
+                <p class=" mt-2 mb-3 font-weight-bold h3 text-danger num" data-goal="300">0</p>
                 <p class="lead text-black  font-weight-bold  ">RENDEZ-VOUS <br> PAR JOUR</p>
             </div>
             <div class="stat text-center mr-5 nums">
-                <p class="mt-2 mb-3 font-weight-bold h3 text-danger num " data-goal="800">0</p>
+                <p class="mt-2 mb-3 font-weight-bold h3 text-danger num " data-goal="322">0</p>
                 <p class="lead text-black font-weight-bold ">DONNATEURS</p>
             </div>
             <div class="stat text-center nums">
-                <p class=" mt-2 mb-3 font-weight-bold h3 text-danger num " data-goal="1300">0</p>
+                <p class=" mt-2 mb-3 font-weight-bold h3 text-danger num " data-goal="400">0</p>
                 <p class="lead text-black font-weight-bold ">PATIENTS</p>
             </div>
         </div>

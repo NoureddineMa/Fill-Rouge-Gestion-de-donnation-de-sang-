@@ -66,7 +66,9 @@ class Pages extends Controller
     // public function Home(){
     //     $this->view('pages/adminhome');
     // }
-
+        public function Error(){
+            $this->view('pages/error404');
+        }
 }
 ?>
 

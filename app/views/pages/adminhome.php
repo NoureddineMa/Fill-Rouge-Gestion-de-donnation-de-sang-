@@ -22,7 +22,7 @@
                         <div class="bg-dark  rounded" >
                             <div class="card-body">
                                 <div class="d-flex flex-column ">
-                                    <p class="card-title fs-6 mb-4 text-white">DONNATEURS</p>
+                                    <p class="card-title fs-6 mb-4 text-white">DONATEURS</p>
                                 </div>
                               <p class="card-text text-end fw-bolder text-danger  fs-3"  style=" font-weight: bolder;
     font-size: 41px;"> <?php echo $data['donnateuracceptercount'][0]->count ?> </p>
@@ -34,7 +34,7 @@
                         <div class="bg-dark   rounded" >
                             <div class="card-body">
                                 <div class="d-flex flex-column ">
-                                    <p class=" text-white">DEMANDES DES DONNATEURS</p>
+                                    <p class=" text-white">DEMANDES DES DONATEURS</p>
                                 </div>
                               <p class="card-text text-end  text-danger  fw-bolder mb-2 fs-3" style=" font-weight: bolder;
     font-size: 41px;"> <?php echo $data['donnateurenattentecount'][0]->count ?></p>

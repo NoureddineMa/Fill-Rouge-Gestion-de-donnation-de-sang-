@@ -12,7 +12,6 @@
       // Instatiate model
       return new $model();
     }
-
     // Load view
     public function view($view, $data = []){
       // Check for view file

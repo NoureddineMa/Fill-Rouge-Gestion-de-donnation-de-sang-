@@ -15,7 +15,7 @@
 
             $this->view('pages/adminmsg',$data);
               }else{
-                redirect('pages/index');
+                redirect('pages/error');
               }
             }
 

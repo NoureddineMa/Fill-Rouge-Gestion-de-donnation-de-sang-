@@ -13,7 +13,7 @@
             $data = $this->patientmodel->getpatients();
             $this->view('pages/adminpatients',$data);
             }else{
-              redirect('pages/index');
+              redirect('pages/error');
             }
           }
 
