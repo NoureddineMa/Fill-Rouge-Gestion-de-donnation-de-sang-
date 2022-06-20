@@ -27,10 +27,10 @@ submit.addEventListener("click", (e) => {
 
 // title Input Validation :
 submit.addEventListener("click", (e) => {
-        if (Title.value == "") {
+        if (Title.value == "" || !(/^[a-zA-Z]{3,}$/).test(Title.value)) {
             e.preventDefault();
             Title.setAttribute("style", "color:red; border: 1px red solid ;");
-            Title_error.innerText = "Veuillez entrer Un titre"
+            Title_error.innerText = "Veuillez entrer Un titre valide qui contient au moins 3 caractéres ! "
             Title_error.setAttribute("style", "color:red;font-size:10px;");
         } else {
             Title.setAttribute("style", "color:black; border: 1px green solid ;");
@@ -39,10 +39,10 @@ submit.addEventListener("click", (e) => {
     })
     // Description Input Validation :
 submit.addEventListener("click", (e) => {
-    if (Description.value == "") {
+    if (Description.value == "" || !(/^[a-zA-Z]{5,}$/).test(Description.value)) {
         e.preventDefault();
         Description.setAttribute("style", "color:red; border: 1px red solid ;");
-        Description_error.innerText = "Veuillez entrer une Description"
+        Description_error.innerText = "Veuillez entrer une Description valide qui contient au moins 3 caractéres ! "
         Description_error.setAttribute("style", "color:red;font-size:10px;");
     } else {
         Description.setAttribute("style", "color:black; border: 1px green solid ;");

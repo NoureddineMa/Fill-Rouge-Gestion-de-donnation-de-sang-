@@ -20,10 +20,10 @@ let submit_patient = document.getElementById("submit_patient");
 
 // validate name
 submit_patient.addEventListener("click", (e) => {
-    if (Nom_patient.value == "" || !(/^[a-zA-Z]{5,10}$/).test(Nom_patient.value)) {
+    if (Nom_patient.value == "" || !(/^[a-z A-Z]{5,}$/).test(Nom_patient.value)) {
         e.preventDefault();
         Nom_patient.setAttribute("style", "color:red; border: 1px red solid ;");
-        Nom_err_patient.innerText = "Veuillez entrer un nom valide ! verifiez que le nom contient entre 5 et 10 caractéres"
+        Nom_err_patient.innerText = "Veuillez entrer un nom valide ! verifiez que le nom contient au minimum 5 caractéres!!"
         Nom_err_patient.setAttribute("style", "color:red;font-size:10px;");
     } else {
         Nom_patient.setAttribute("style", "color:black; border: 1px green solid ;");
@@ -33,10 +33,10 @@ submit_patient.addEventListener("click", (e) => {
 
 // validate prenom
 submit_patient.addEventListener("click", (e) => {
-    if (Prenom_patient.value == "" || !(/^[a-zA-Z]{5,10}$/).test(Prenom_patient.value)) {
+    if (Prenom_patient.value == "" || !(/^[a-z A-Z]{5,}$/).test(Prenom_patient.value)) {
         e.preventDefault();
         Prenom_patient.setAttribute("style", "color:red; border: 1px red solid ;");
-        Prenom_err_patient.innerText = "Veuillez entrer un Prenom valide ! verifiez que le prenom contient entre 5 et 10 caractéres"
+        Prenom_err_patient.innerText = "Veuillez entrer un Prenom valide ! verifiez que le prenom contient au minimum 5 caractéres!!"
         Prenom_err_patient.setAttribute("style", "color:red;font-size:10px;");
     } else {
         Prenom_patient.setAttribute("style", "color:black; border: 1px green solid ;");
@@ -46,10 +46,10 @@ submit_patient.addEventListener("click", (e) => {
 
 // validate adresse 
 submit_patient.addEventListener("click", (e) => {
-        if (Adresse_patient.value == "") {
+        if (Adresse_patient.value == "" || !(/^[a-z A-Z 0-9]{5,30}$/).test(Adresse_patient.value)) {
             e.preventDefault();
             Adresse_patient.setAttribute("style", "color:red; border: 1px red solid ;");
-            Adresse_err_patient.innerText = "Veuillez entrer votre Adresse"
+            Adresse_err_patient.innerText = "Veuillez entrer une Adresse Valide (5 caractéres minimum)!"
             Adresse_err_patient.setAttribute("style", "color:red;font-size:10px;");
         } else {
             Adresse_patient.setAttribute("style", "color:black; border: 1px green solid ;");
@@ -58,7 +58,7 @@ submit_patient.addEventListener("click", (e) => {
     })
     // validate ville
 submit_patient.addEventListener("click", (e) => {
-    if (Ville_patient.value == "" || !(/^[a-zA-Z]{5,10}$/).test(Nom_patient.value)) {
+    if (Ville_patient.value == "" || !(/^[a-zA-Z]{5,10}$/).test(Ville_patient.value)) {
         e.preventDefault();
         Ville_patient.setAttribute("style", "color:red; border: 1px red solid ;");
         Ville_err_patient.innerText = "Veuillez entrer une ville valide"
@@ -74,7 +74,7 @@ submit_patient.addEventListener("click", (e) => {
     if (Email_patient.value == "" || !(/^[a-zA-Z_0-9]{3,}@[a-zA-Z]{3,}[.]{1}[a-z]{2,4}$/).test(Email_patient.value)) {
         e.preventDefault();
         Email_patient.setAttribute("style", "color:red; border: 1px red solid ;");
-        Email_err_patient.innerText = "Veuillez entrer votre Adresse Mail"
+        Email_err_patient.innerText = "Veuillez entrer  une Adresse mail Valide"
         Email_err_patient.setAttribute("style", "color:red;font-size:10px;");
     } else {
         Email_patient.setAttribute("style", "color:black; border: 1px green solid ;");
@@ -108,17 +108,3 @@ submit_patient.addEventListener("click", (e) => {
         Date_err_patient.innerText = "";
     }
 })
-
-
-
-// regex for name
-// function ValidationName() {
-//     if (!(/^[a-zA-Z]{5,10}$/).test(Nom_patient.value)) {
-//         Nom_patient.setAttribute("style", "color:red; border: 1px red solid ;");
-//         Nom_err_patient.setAttribute("style", "color:red;");
-//         Nom_err_patient.innerText = "veuillez entrer un nom valid";
-//     } else {
-//         nameCourse.setAttribute("style", "color:black; border: 1px green solid ;");
-//         Nom_err_patient.innerText = "";
-//     }
-// }

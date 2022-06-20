@@ -1,7 +1,7 @@
 <?php
   class Admins extends Controller {
     public function __construct(){
-      $this->userModel = $this->model('User');
+      $this->userModel = $this->model('Admin');
 
         //
       $this->donnateurmodel = $this->model('Donnateur');

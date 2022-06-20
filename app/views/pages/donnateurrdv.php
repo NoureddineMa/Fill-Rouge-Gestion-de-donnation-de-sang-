@@ -43,7 +43,7 @@
         </div>
         <div class="form-group ">
             <label for="inputAddress2 ">NUMERO DE TELEPHONE <span class="text-danger"> *</span> :</label>
-            <input type="tel" class="form-control " name="Phone_donnateur" id="Num_donnateurs" placeholder="Veuillez Entrer Votre Numero de telephone ">
+            <input type="number" class="form-control " name="Phone_donnateur" id="Num_donnateurs" placeholder="Veuillez Entrer Votre Numero de telephone ">
             <div id="Num_error"></div>
         </div>
             <div class="form-group">

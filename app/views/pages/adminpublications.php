@@ -46,7 +46,7 @@
 
                                                     <!-- form -->
 
-                                                    <form role="form" action="<?php echo URLROOT; ?>/Pubs/ajouterpub" method="POST" enctype="multipart/form-data">
+                                                    <form role="form" action="<?php echo URLROOT; ?>/Pubs/ajouterpub" method="POST" enctype="multipart/form-data" onsubmit="return validateFile()">
 
 
                                                         <div class="form-group mb-3">
@@ -54,7 +54,7 @@
                                                                 <div class="input-group-prepend">
 
                                                                 </div>
-                                                                <input class="form-control" name="Image" id="Image" type="file">
+                                                                <input class="form-control img1" name="Image" id="Image" type="file">
                                                             </div>
                                                             <div id="Image_error"></div>
 

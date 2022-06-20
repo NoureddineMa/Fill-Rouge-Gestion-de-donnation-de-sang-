@@ -21,7 +21,7 @@
                   <a href="<?php echo URLROOT; ?>/pages/donnateurrdv">
                     <button type="button " class="btn button-index-r btn-round ">Donner du Sang</button>
                   </a>
-                  <a href="<?php echo URLROOT; ?>/pages/patient">
+                  <a href="<?php echo URLROOT; ?>/pages/patientrdv">
                     <button type="button" class="btn button-index-b btn-round">Besoin de Sang</button>
                   </a>
                 </div>
