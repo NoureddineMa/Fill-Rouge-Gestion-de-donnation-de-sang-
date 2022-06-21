@@ -239,7 +239,7 @@
             <h3 class="display-3 mt-3  text-white">LE DON DU SANG
             </h3>
         </div>
-        <div class=" container  d-flex flex-row flex-wrap justify-content-around  mb-5  ">
+        <div class=" container  d-flex flex-column flex-lg-row justify-content-around  mb-5  ">
             <div class="first-card text-center p-3 mb-3 mt-3  rounded ">
                 <svg xmlns="http://www.w3.org/2000/svg" class="mb-2" width="49.5" height="66" viewBox="0 0 49.5 66">
                     <path id="Icon_awesome-notes-medical" data-name="Icon awesome-notes-medical" d="M43.313,8.25H33a8.25,8.25,0,0,0-16.5,0H6.188A6.189,6.189,0,0,0,0,14.438V59.813A6.189,6.189,0,0,0,6.188,66H43.313A6.189,6.189,0,0,0,49.5,59.813V14.438A6.189,6.189,0,0,0,43.313,8.25ZM24.75,5.156A3.094,3.094,0,1,1,21.656,8.25,3.086,3.086,0,0,1,24.75,5.156ZM37.125,44.344a1.034,1.034,0,0,1-1.031,1.031H28.875v7.219a1.034,1.034,0,0,1-1.031,1.031H21.656a1.034,1.034,0,0,1-1.031-1.031V45.375H13.406a1.034,1.034,0,0,1-1.031-1.031V38.156a1.034,1.034,0,0,1,1.031-1.031h7.219V29.906a1.034,1.034,0,0,1,1.031-1.031h6.188a1.034,1.034,0,0,1,1.031,1.031v7.219h7.219a1.034,1.034,0,0,1,1.031,1.031Zm0-24.75a1.034,1.034,0,0,1-1.031,1.031H13.406a1.034,1.034,0,0,1-1.031-1.031V17.531A1.034,1.034,0,0,1,13.406,16.5H36.094a1.034,1.034,0,0,1,1.031,1.031Z" fill="#ed1c24"/>

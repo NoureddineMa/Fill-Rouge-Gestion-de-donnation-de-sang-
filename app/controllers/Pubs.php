@@ -41,7 +41,7 @@
 
               $output_dir = "public/uploads";//Path for file upload
 
-              $RandomNum = time();
+              $serie = time();
     
               print_r($_FILES);
               $ImageName = str_replace(' ','-',strtolower($_FILES['Image']['name']));
@@ -49,7 +49,7 @@
               $ImageExt = substr($ImageName, strrpos($ImageName, '.'));
               $ImageExt = str_replace('.','',$ImageExt);
               $ImageName = preg_replace("/.[^.\s]{3,4}$/", "", $ImageName);
-              $NewImageName = $ImageName.'-'.$RandomNum.'.'.$ImageExt;
+              $NewImageName = $ImageName.'-'.$serie.'.'.$ImageExt;
               $ret[$NewImageName]= $output_dir.$NewImageName; 
               move_uploaded_file($_FILES["Image"]["tmp_name"],"C:/xampp/htdocs/Fill-Rouge-Gestion-de-donnation-de-sang-" ."/".$output_dir."/".$NewImageName );
 
@@ -86,7 +86,7 @@
             
             $output_dir = "public/uploads";//Path for file upload
 
-            $RandomNum = time();
+            $serie = time();
   
             print_r($_FILES);
             $ImageName = str_replace(' ','-',strtolower($_FILES['Image']['name']));
@@ -94,7 +94,7 @@
             $ImageExt = substr($ImageName, strrpos($ImageName, '.'));
             $ImageExt = str_replace('.','',$ImageExt);
             $ImageName = preg_replace("/.[^.\s]{3,4}$/", "", $ImageName);
-            $NewImageName = $ImageName.'-'.$RandomNum.'.'.$ImageExt;
+            $NewImageName = $ImageName.'-'.$serie.'.'.$ImageExt;
             $ret[$NewImageName]= $output_dir.$NewImageName; 
             move_uploaded_file($_FILES["Image"]["tmp_name"],"C:/xampp/htdocs/Fill-Rouge-Gestion-de-donnation-de-sang-" ."/".$output_dir."/".$NewImageName );
 
