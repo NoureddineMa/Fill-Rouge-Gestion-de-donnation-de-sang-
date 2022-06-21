@@ -25,7 +25,7 @@ let select_donnateurs = document.getElementById("select_donnateurs");
 
 // validate name
 submit_donnateurs.addEventListener("click", (e) => {
-    if (Nom_donnateurs.value == "" || !(/^[a-zA-Z]{5,}$/).test(Nom_donnateurs.value)) {
+    if (Nom_donnateurs.value == "" || !(/^[a-zA-Z]{3,}$/).test(Nom_donnateurs.value)) {
         e.preventDefault();
         Nom_donnateurs.setAttribute("style", "color:red; border: 1px red solid ;");
         Nom_error.innerText = "Veuillez entrer un nom valide ! verifiez que le nom contient au minimum 5 caractéres!!"
